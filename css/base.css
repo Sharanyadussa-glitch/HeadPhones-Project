@@ -212,3 +212,71 @@ button:hover{
     background-color: darkolivegreen;
     color: white;
 }
+
+
+/* ------- Gallery / Product page ------- */
+
+main {
+  min-width: 1240px;
+  color: #000;
+  border: 2px solid red;
+  line-height: 1.5;
+  font-size: 18px;
+  font-weight: 400;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-width: 900px;
+  padding: 2em;
+  border: 2px dotted blue;
+}
+.hero-content {
+  width: 600px;
+  padding: 2em;
+  margin: 0 10px;
+}
+.hero-eyebrow {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+.hero-title {
+  font-family: "Space Grotesk", sans-serif!important;
+  font-weight: 700;
+  font-size: 2.5em;
+  margin: 12px 0 12px 0;
+}
+.hero-desc {
+  font-weight: 500;
+}
+.btn-primary {
+  position: absolute;
+  margin-top: 3em;
+  color: #fff;
+}
+.hero-img {
+  width: 610px;
+  height: 587px;
+  margin: 0 10px;
+  /* border: 2px solid orange; */
+}
+.hero-img > img {
+  width: 610px;
+  height: 587px;
+  border-radius: 80px;
+  object-fit: cover;
+}
+.hero-product-img {
+  width: 600px;
+  height: 470px;
+  margin: 45px;
+  /* border: 2px solid orange; */
+}
+.hero-product-img > img {
+  width: 600px;
+  height: 470px;
+  border-radius: 80px;
+  object-fit: cover;
+}
