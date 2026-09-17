@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+
+    <section class="contact-form">
+
+        <div class="contact-form__bg">
+            <img src="images/cropped-greenheadphones-unsplash.jpg" alt="green headphones">
+        </div>
+
+        <div class="form-box">
+            <form action="">
+
+                <div class="form-content">
+                    <label for="name">FULL NAME</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+
+                <div class="form-content">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+
+                <div class="form-content">
+                    <label for="topic">MESSAGE REGARDING</label>
+                    <select name="topic" id="topic" required>
+                        <option value="">Please choose an option</option>
+                        <option value="general">General inquiry</option>
+                        <option value="support">Product support</option>
+                        <option value="feedback">Feedback</option>
+                    </select>
+                </div>
+
+                <div class="form-content form-box--message">
+                    <label for="message">YOUR MESSAGE</label>
+                    <textarea name="message" id="message" cols="30" rows="10" maxlength="500" placeholder="Your Message" required ></textarea>
+                </div>
+
+                <div class="form-content form-content--checkbox">
+                    <label for="privacy">By submitting this form, I agree to the <a href="#">Privacy Policy</a></label>
+                    <input class="checkbox" type="checkbox" id="privacy" name="privacy" required>
+                    <span class="checkmark"></span>
+                </div>
+
+                <div class="form-content form-content--checkbox">
+                    <label for="subscribe">Sign me up for the newsletter</label>
+                    <input class="checkbox" type="checkbox" id="subscribe" name="subscribe">
+                    <span class="checkmark"></span>
+                </div>
+
+
+                <button type="submit">SEND MESSAGE</button>
+
+            </form>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
