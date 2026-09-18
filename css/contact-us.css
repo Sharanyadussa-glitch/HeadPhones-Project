@@ -1,0 +1,188 @@
+
+.contact-form{
+    /* --- Background --- */
+    background-color: var(--lightgreen-color); 
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 60px;
+}
+
+.contact-form__bg{
+    /* --- the div or picture frame" --- */
+    width: 875px;
+    height: 934px;
+    padding-right: 150px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.contact-form__bg img{
+    /* --- Background Image --- */
+    width:875px ;
+    height: 934px;
+    object-fit: cover;
+}
+
+.form-box{
+    /* --- Container --- */
+    background-color: var(--main-color);
+    width: 505px; 
+    height: 910px;
+    border-radius: 80px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.form-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input{
+    background-color: var(--whitepink-color);
+    border: none;
+    border-radius: 20px;
+    padding: 15px 15px 15px 15px;
+}
+
+textarea{
+    background-color: var(--whitepink-color);
+    border: none;
+    border-radius: 20px;
+    padding: 15px 15px 15px 15px;
+}
+
+input::placeholder{
+    color: var(--darklightpink-color);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+textarea::placeholder{
+    color: var(--darklightpink-color);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+select{
+    background-color: var(--whitepink-color);
+    color: var(--darklightpink-color);
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    padding-left: 10px;
+
+    appearance: none;
+    background-image: url(../images/angle-down-solid-full.svg);
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 25px 25px;
+}
+
+textarea:focus,
+input:focus,
+select:focus{
+    outline: 2px solid var(--darklightpink-color);
+    outline-offset: -5px; /* for the outline to have some padding inside the boc*/
+}
+
+form input:hover, 
+form textarea:hover, 
+form select:hover{
+    background-color: white;
+}
+
+form input,
+form textarea{
+    cursor: text;
+}
+
+/* --- Checkboxes --- */
+
+.form-content--checkbox{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    position: relative;
+    padding-left: 30px;
+}
+
+/* the text went outside the cointainer so this was the solve that Claude suggested*/
+.form-content--checkbox label{
+    flex: 1;
+    min-width: 0;
+}
+
+ .checkbox{
+    opacity: 0;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    cursor: pointer;
+    z-index: 2;
+    left: 0;
+}
+
+.checkmark {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/square-solid-full.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    left: 0;
+}
+
+.checkbox:checked + .checkmark{
+    background-image: url(../images/square-check-solid-full.svg);
+}
+
+a{
+    color: var(--whitepink-color);
+}
+
+a:visited{
+    color: var(--lightpink-color);
+}
+
+a:hover{
+    color: var(--lightgreen-color);
+}
+
+/* --- Button --- */
+button{
+    background-color: var(--darklightgreen-color);
+    color: var(--lightpink-color);
+    font-weight: 800;
+    border: none;
+    border-radius: 40px;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+button:hover{
+    background-color: darkolivegreen;
+    color: white;
+}
