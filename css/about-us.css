@@ -1,0 +1,58 @@
+/* Header: logo and main navigation */
+/* 1. Page defaults: remove outer spacing and set the font */
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif
+}
+
+/* 2. Header layout: place the logo and navigation side by side */
+.site-header {
+  display: flex;
+  padding: 20px 5%;
+  align-items: center;
+  justify-content: space-between;
+   border-bottom: 1px solid #e5e5e5;  /* This draws one line across the bottom of the entire header.*/
+}
+
+/* 3. Logo: set the size, weight and colour */
+.logo {
+  font-size: 38px;
+  font-weight: 700;
+  color: #647e60
+}
+
+/* 4. Navigation list: arrange links horizontally and remove bullets */
+.header__nav ul {
+  color: darkgreen;
+  display: flex;
+  gap: 28px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* 5. Navigation links: set the normal appearance */
+.header__nav a {
+  font-size: 20px;
+  color: #444;
+  text-decoration: none;
+  padding-bottom: 6px;
+  border-bottom: 2px solid transparent
+}
+
+/* 6. Highlight the hovered link and the current page */
+.header__nav a:hover,
+.header__nav a.active {
+  color: #647e60;
+  font-weight: 700;
+  border-bottom: 2px solid #647e60;
+  padding-bottom: 6px;
+}
+
+/* Main content: introduction, values and team */
+.about-container {
+  color: #647e60;
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+}
