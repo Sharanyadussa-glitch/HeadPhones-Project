@@ -16,7 +16,7 @@ body {
 
 /* 3. Logo: set the size, weight and colour */
 .logo {
-  font-size: 38px;
+  font-size: 28px;
   font-weight: 700;
   color: #647e60
 }
@@ -33,7 +33,8 @@ body {
 
 /* 5. Navigation links: set the normal appearance */
 .header__nav a {
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: 400;
   color: #444;
   text-decoration: none;
   padding-bottom: 6px;
@@ -46,13 +47,71 @@ body {
   color: #647e60;
   font-weight: 700;
   border-bottom: 2px solid #647e60;
-  padding-bottom: 6px;
 }
 
 /* Main content: introduction, values and team */
 .about-container {
   color: #647e60;
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 700;
   text-align: center;
+}
+
+.about-container h1 {
+  color: #647e60;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 40px 0;
+}
+
+/* Introduction layout: arrange the two containers side by side */
+.about-intro {
+  width: 90%; /*uses 90% of its parent’s width, leaving breathing room.*/
+  max-width: 960px; /*stops it getting too wide on a large screen.*/
+  margin: 0 auto; /*centres the entire introduction horizontally.*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.about-intro-text h2 {
+  color: #647e60;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1; /*brings the two heading lines close together.*/
+  margin: 0 0 24px;/*removes the top and side margins and leaves 24px below.*/
+}
+
+.about-intro-text p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #444;
+}
+
+.about-intro-image img { /* the spac followed by style the image inside the container, rather than the container itself.*/
+  width: 100%;
+  height: auto; /*lets the browser calculate the image’s height to keep its original proportions when its width changes*/
+  display: block;/*makes the image behave as a block element.*/
+  border-radius:24px
+}
+
+/* Give the text and image containers equal space */
+.about-intro-text,
+.about-intro-image {
+  flex: 1; /*on both divides the available space equally.*/
+  min-width: 0; /*lets them shrink when needed.*/
+}
+
+/* Collection link: pink rounded button */
+.about-intro-text .button {
+  display: inline-block;
+  background-color: #bb7889;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 30px;
 }
