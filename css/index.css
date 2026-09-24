@@ -36,11 +36,8 @@ nav {
   gap: 45px;
 }
 
-nav a {
-  color: #56705b;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 500;
+nav a, nav a:visited, nav a:hover, nav a:active {
+  color: #355044;
 }
 
 
@@ -84,7 +81,17 @@ nav a {
   color: #56705b;
   margin-bottom: 30px;
 }
+h1 {
 
+  font-size: clamp(70px, 8vw, 125px);
+
+  line-height: 0.9;
+
+  letter-spacing: -6px;
+
+  margin-bottom: 30px;
+
+}
 
 
 h1 span {
