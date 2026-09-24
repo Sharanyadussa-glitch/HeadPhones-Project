@@ -11,16 +11,6 @@ body {
   overflow: hidden;
 }
 
-.Phones {
-  
-  font-size: 32px;
-  font-weight: 700;
-  letter-spacing: 1px;
-
-}
-
-
-
 
 header {
   height: 90px;
@@ -37,21 +27,22 @@ header {
   font-size: 32px;
   font-weight: 700;
   letter-spacing: 1px;
+  color: #c96f85;
 }
 
-.nav {
+nav {
   display: flex;
   align-items: center;
   gap: 45px;
-  color: #102f2a;
 }
 
 nav a {
-  color: #102f2a;
+  color: #56705b;
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
 }
+
 
 .buy-btn {
   background: #c96f85;
@@ -94,12 +85,7 @@ nav a {
   margin-bottom: 30px;
 }
 
-h1 {
-  font-size: clamp(70px, 8vw, 125px);
-  line-height: 0.9;
-  letter-spacing: -6px;
-  margin-bottom: 30px;
-}
+
 
 h1 span {
   color: #c96f85;
