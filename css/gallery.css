@@ -1,26 +1,29 @@
-/* ------- Gallery / Product page ------- */
+/* ------- Base ------- */
 
-main {
+
+body {
   min-width: 1240px;
   color: #000;
-  border: 2px solid red;
   line-height: 1.5;
   font-size: 18px;
   font-weight: 400;
+  /* border: 2px solid red; */
 }
+
+/* ------- Hero section ------- */
+
 .hero {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   min-width: 1240px;
   padding: 2em;
-  border: 2px dotted blue;
+  /* border: 2px dotted blue; */
 }
 .hero-content {
   width: 700px;
-  /* padding: 2em; */
   margin-right: 40px;
-  border: 2px dotted red;
+  /* border: 2px dotted red; */
 }
 .hero-eyebrow {
   font-size: 16px;
@@ -30,13 +33,17 @@ main {
 }
 .hero-title {
   font-family: "Space Grotesk", sans-serif!important;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 5em;
   line-height: 1;
   color: var(--darklightgreen-color);
   margin: 12px 0 12px 0;
 }
+.hero-title--pink {
+  color: var(--main-color);
+}
 .hero-desc {
+  font-size: 20px;
   width: 600px;
   font-weight: 500;
 }
@@ -44,6 +51,7 @@ main {
   width: 600px;
 }
 .btn-primary {
+  background-color: var(--main-color);
   position: absolute;
   margin-top: 3em;
   color: #fff;
@@ -51,7 +59,7 @@ main {
 .hero-img {
   width: 700px;
   height: 587px;
-  border: 2px solid orange;
+  /* border: 2px solid orange; */
 }
 .hero-img > img {
   width: 700px;
@@ -62,9 +70,9 @@ main {
 .hero-product-img {
   display: flex;
   justify-content: space-evenly;
-  width: 1440px;
+  width: 1473px;
   margin-top: 3em;
-  border: 2px solid orange;
+  /* border: 2px solid orange; */
 }
 .hero-product-img > img {
   width: 460px;
@@ -72,8 +80,81 @@ main {
   margin-right: 15px;
   border-radius: 80px;
   object-fit: cover;
-  border: 2px dotted blue;
+  /* border: 2px dotted blue; */
 }
 .hero-product-img > img:last-of-type {
   margin-right: 0;
+}
+
+/* ------- OBS test of adding bkgr to hero section - Remove if not used -------  */
+.bkgr-test {
+  background-image: url(/HeadPhones-Project/images/bg-test.png);
+  background-color: #ffffff6e;
+  background-blend-mode: lighten;
+}
+.white {
+  color:#fff!important;
+}
+
+/* ------- Gallery section ------- */
+
+.gallery {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-width: 1240px;
+  padding: 2em;
+}
+.gallery-content {
+  /* justify-content: center; */
+  /* align-items: center; */
+  width: 800px;
+  padding: 2em;
+}
+.gallery-title {
+  color: var(--main-color);
+  font-size: 4em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.gallery-desc {
+  /* width: 500px; */
+  font-size: 20px;
+  text-align: center;
+}
+.gallery-cards {
+  width: 1240px;
+  display: grid;
+  gap: 33px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+.gallery-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 391px;
+  height: 360px;
+  grid-row: auto;
+  grid-column: auto;
+  border-radius: 40px;
+}
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 40px;
+}
+.gallery-img:hover {
+  opacity: 0.5;
+}
+.btn-gallery {
+  background-color: #fff;
+  color: var(--main-color);
+  margin-top: 0;
+}
+.btn-gallery:hover {
+  background-color: var(--main-color);
+  color: #fff;
 }
