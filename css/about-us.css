@@ -115,3 +115,93 @@ body {
   padding: 14px 28px;
   border-radius: 30px;
 }
+
+/* Our Values: title on the left and value list on the right */
+.about-values {
+  width: 90%;
+  max-width: 960px;
+  margin: 60px auto 0;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Left container only: the green circle */
+.values-title {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%; /*turns it into a circle*/
+  background-color: #789974;
+  flex-shrink: 0; /*prevents it being squeezed by the large images*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.values-title h2 {
+  color: white; /* White heading */
+  font-size: 48px;
+  line-height: 1.1; /*keeps the two lines close together.*/
+  text-align: center;
+  margin: 0;
+}
+
+/* Right container: holds all three value rows */
+.values-list {
+  flex: 1;       /* Fill the space left beside the green circle */
+  min-width: 0;  /* Allow this container to shrink when space is limited */
+}
+
+/* Images inside the values list */
+.values-list img {
+  width: 80px;    /* Make each icon 80px wide */
+  height: auto;  /* Keep the image's original proportions */
+  display: block; /* Remove the small baseline gap beneath the image */
+}
+
+/* Each row: text on the left, icon on the right */
+.value-row {
+  display: flex;                  /* Place text and icon side by side */
+  align-items: center;             /* Align their vertical centres */
+  justify-content: flex-start; /* Keep the text and icon together */
+  gap: 20px;                      /* Keep at least 20px between them */
+  padding: 20px 0;                  /* Space above and below each row */
+  border-bottom: 1px solid #e5e5e5; /* Thin grey dividing line */
+}
+
+/* Prevent icons from being squeezed in a flex row */
+.value-row img {
+  flex-shrink: 0; /* Keep the icon at its specified width */
+}
+
+/* Green value headings */
+.about-values-text h3 {
+  color: #647e60;    /* Muted green */
+  font-size: 24px;   /* Heading size */
+  font-weight: 700;  /* Bold */
+  margin: 0 0 6px;   /* Small space below the heading */
+}
+
+/* Description below each heading */
+.about-values-text p {
+  color: #444;       /* Dark grey */
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;         /* Remove default paragraph spacing */
+
+}
+
+/* Equal text widths keep the icons aligned */
+.about-values-text {
+  width: 380px;
+}
+
+/* Remove the line below the third value */
+.no-border {
+  border-bottom: none;
+}
+
+
+
+
+
