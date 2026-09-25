@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #596c41;
+  color: #102f2a;
+  overflow: hidden;
+}
+
+
+header {
+  height: 90px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  position: relative;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #c96f85;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+nav a, nav a:visited, nav a:hover, nav a:active {
+  color: #355044;
+}
+
+
+.buy-btn {
+  background: #c96f85;
+  color: white;
+  padding: 14px 30px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+.button {
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+.hero {
+  min-height: calc(100vh - 90px);
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 6%;
+  overflow: hidden;
+}
+
+.hero-text {
+  width: 45%;
+  position: relative;
+  z-index: 3;
+}
+
+.eyebrow {
+  font-size: 15px;
+  letter-spacing: 4px;
+  font-weight: 600;
+  color: #56705b;
+  margin-bottom: 30px;
+}
+h1 {
+
+  font-size: clamp(70px, 8vw, 125px);
+
+  line-height: 0.9;
+
+  letter-spacing: -6px;
+
+  margin-bottom: 30px;
+
+}
+
+
+h1 span {
+  color: #c96f85;
+}
+
+.description {
+  max-width: 500px;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #56705b;
+  margin-bottom: 40px;
+}
+
+.shop-btn {
+  background: #c96f85;
+  color: white;
+  padding: 18px 38px;
+  border-radius: 35px;
+  font-size: 17px;
+}
+
+.product {
+  width: 55%;
+  height: 650px;
+  position: relative;
+  z-index: 3;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product img {
+  width: 90%;
+  max-width: 750px;
+  position: relative;
+  z-index: 3;
+
+  filter: drop-shadow(0 35px 25px rgba(40, 60, 45, 0.25));
+}
+.pink-shape {
+  position: absolute;
+
+  width: 1000px;
+  height: 430px;
+
+  right: -250px;
+  top: 230px;
+
+  background: #c96f85;
+
+  border-radius: 50%;
+
+  transform: rotate(-25deg);
+
+  opacity: 0.9;
+
+  z-index: 1;
+
+  background: linear-gradient(
+    135deg,
+    #d8879a,
+    #bd687e
+  );
+
+}
+
+.product {
+  z-index: 3;
+}
+
+body {
+  background:
+    radial-gradient(
+      circle at 20% 50%,
+      #edf1df 0%,
+      #dce5d0 45%,
+      #c7d5c0 100%
+    );
+
+  color: #102f2a;
+}
+
+.pink-shape {
+  background: linear-gradient(
+    135deg,
+    #d8879a,
+    #bd687e
+  );
+}
