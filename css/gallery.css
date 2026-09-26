@@ -9,6 +9,9 @@ body {
   font-weight: 400;
   /* border: 2px solid red; */
 }
+a {
+  text-decoration: none;
+}
 
 /* ------- Hero section ------- */
 
@@ -52,7 +55,7 @@ body {
 }
 .btn-primary {
   background-color: var(--main-color);
-  position: absolute;
+  /* position: absolute; */
   margin-top: 3em;
   color: #fff;
 }
@@ -90,16 +93,6 @@ body {
 }
 .hero-product-card:last-of-type {
   margin-right: 0;
-}
-
-/* ------- OBS test of adding bkgr to hero section - Remove if not used -------  */
-.bkgr-test {
-  background-image: url(/HeadPhones-Project/images/bg-test.png);
-  background-color: #ffffff6e;
-  background-blend-mode: lighten;
-}
-.white {
-  color:#fff!important;
 }
 
 /* ------- Gallery section ------- */
@@ -145,6 +138,7 @@ body {
   grid-row: auto;
   grid-column: auto;
   border-radius: 40px;
+  position: relative;
 }
 .gallery-img {
   width: 100%;
@@ -156,11 +150,19 @@ body {
   opacity: 0.5;
 }
 .btn-gallery {
-  background-color: #fff;
-  color: var(--main-color);
+  background-color: var(--darklightpink-color);
+  color: #fff;
   margin-top: 0;
+  position: absolute;
 }
 .btn-gallery:hover {
-  background-color: var(--main-color);
-  color: #fff;
+  background-color: #fff;
+  color: var(--main-color);
+}
+.gallery-expand {
+  grid-column: 2;
+  display: flex;
+  justify-content: center;
+  height: 40%;
+  /* border: 2px solid blue; */
 }
