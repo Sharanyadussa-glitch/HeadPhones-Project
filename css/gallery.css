@@ -67,22 +67,28 @@ body {
   border-radius: 80px;
   object-fit: cover;
 }
-.hero-product-img {
+.hero-product-cards {
   display: flex;
   justify-content: space-evenly;
   width: 1473px;
   margin-top: 3em;
   /* border: 2px solid orange; */
 }
-.hero-product-img > img {
-  width: 460px;
+.hero-product-card {
+  width: 473px;
   height: 360px;
   margin-right: 15px;
   border-radius: 80px;
   object-fit: cover;
   /* border: 2px dotted blue; */
 }
-.hero-product-img > img:last-of-type {
+.hero-product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 80px;
+}
+.hero-product-card:last-of-type {
   margin-right: 0;
 }
 
