@@ -13,6 +13,50 @@ a {
   text-decoration: none;
 }
 
+
+/* ------- Header navbar ------- */
+.header-nav {
+  color: var(--main-color);
+  height: 100px;
+  margin: 0;
+  padding: 0;
+}
+.header-navbar {
+  display: flex;
+  align-items: center;
+  min-height: 100%;
+  padding: 0 2em;
+}
+.header-logo {
+  align-self: center;
+  width: 400px;
+  height: 80%;
+  margin: 0;
+  padding: 0;
+}
+.header-logo-link:hover {
+  opacity: 0.5;
+}
+.header-navbar-list {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 20px;
+}
+.header-navbar-link:visited {
+  color: var(--main-color);
+}
+.header-navbar-link:hover {
+  color: var(--darklightpink-color);
+}
+.header-navbar-item {
+  width: 150px;
+}
+
+
 /* ------- Hero section ------- */
 
 .hero {
