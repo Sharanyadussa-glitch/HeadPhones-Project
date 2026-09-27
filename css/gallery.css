@@ -21,6 +21,7 @@ a {
   flex-wrap: wrap;
   min-width: 1240px;
   padding: 2em;
+  background-color: var(--lightgreen-color);
   /* border: 2px dotted blue; */
 }
 .hero-content {
@@ -62,6 +63,8 @@ a {
 .hero-img {
   width: 700px;
   height: 587px;
+  border: 1px solid #fff;
+  border-radius: 80px;
   /* border: 2px solid orange; */
 }
 .hero-img > img {
@@ -90,6 +93,7 @@ a {
   height: 100%;
   object-fit: cover;
   border-radius: 80px;
+  border: 1px solid #fff;
 }
 .hero-product-card:last-of-type {
   margin-right: 0;
