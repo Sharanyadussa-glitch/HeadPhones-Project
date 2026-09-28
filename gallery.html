@@ -7,32 +7,183 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/097d498678.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/gallery.css">
   <title>Headphones - Product page</title>
 </head>
 <body>
-  <main>
-    <section class="hero">
-      <div class="hero-content">
-        <span class="hero-eyebrow">The collection</span>
-        <h1 class="hero-title">Sound, shaped around you.</h1>
-        <p class="hero-desc">Every pair in the Smooth Headphones lineup is built for the way you actually listen — at your desk, on the train, or lost somewhere in between. Explore the collection below.</p>
-        <p class="hero-info">Soft matte finishes meet precision-tuned drivers. The Smooth Air wraps studio-grade sound in a lightweight, cushioned build that feels as good as it looks. Memory-foam ear cups, a breathable headband, and 30 hours of battery life mean you can wear them all day without noticing the weight — only the music.</p>
-        <a href="#">
-          <button class="btn btn-primary">Get me pair</button>
+  <header class="header-nav">
+    <nav class="header-navbar">
+      <a href="#" class="header-logo-link">
+        <img class="header-logo" src="images/smooth-logo.svg" alt="">
+      </a>
+      <ul class="header-navbar-list">
+        <a class="header-navbar-link" href="#">
+          <li class="header-navbar-item">Home</li>
         </a>
+        <a class="header-navbar-link" href="#">
+          <li class="header-navbar-item">Products</li>
+        </a>
+        <a class="header-navbar-link" href="#">
+          <li class="header-navbar-item">About us</li>
+        </a>
+        <a class="header-navbar-link" href="#">
+          <li class="header-navbar-item">Contact</li>
+        </a>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section class="hero">
+    <div class="hero-content">
+      <span class="hero-eyebrow">The Mint collection</span>
+      <h1 class="hero-title">Sound, <span class="hero-title--pink">shaped</span> around you.</h1>
+      <p class="hero-desc">Every pair in the Smooth Headphones lineup is built for the way you actually listen — at your desk, on the train, or lost somewhere in between. Explore the collection below.</p>
+      <p class="hero-info">Soft matte finishes meet precision-tuned drivers. The Smooth Air wraps studio-grade sound in a lightweight, cushioned build that feels as good as it looks. Memory-foam ear cups, a breathable headband, and 30 hours of battery life mean you can wear them all day without noticing the weight — only the music.</p>
+      <a href="#">
+        <button class="btn btn-primary">Get me a pair</button>
+      </a>
+    </div>
+    <div class="hero-img">
+      <img src="images/cropped-greenheadphones-unsplash.jpg" alt="">
+    </div>
+    <div class="hero-product-cards">
+      <div class="hero-product-card">
+        <img class="hero-product-img" src="images/prod-illu-1.png" alt="">
       </div>
-      <div class="hero-img">
-        <img src="images/cropped-greenheadphones-unsplash.jpg" alt="">
+      <div class="hero-product-card">
+        <img class="hero-product-img" src="images/prod-illu-2.png" alt="">
       </div>
-      <div class="hero-product-img">
-        <img src="images/cropped-greenheadphones-unsplash.jpg" alt="">
-        <img src="images/cropped-greenheadphones-unsplash.jpg" alt="">
-        <img src="images/cropped-greenheadphones-unsplash.jpg" alt="">
+      <div class="hero-product-card">
+        <img class="hero-product-img" src="images/prod-illu-3.png" alt="">
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <div class="gallery-content">
+      <h2 class="gallery-title">Our many collections</h2>
+      <p class="gallery-desc">At Soundly we are all about good sound. That's why we always try and improve our headphones along the way and this had lead to many, various collections of headphones. Here you can find some of our previous collections.</p>
+    </div>
+    <div class="gallery-cards">
+      <div class="gallery-card">
+        <img class="gallery-img" src="images/green-headphones.png" alt="">
+        <button class="btn btn-gallery">Green collection</button>
+      </div>
+        <div class="gallery-card">
+        <img class="gallery-img" src="images/pink-airpods.png" alt="">
+        <button class="btn btn-gallery">Pink collection</button>
+      </div>
+        <div class="gallery-card">
+        <img class="gallery-img" src="images/red-headphones.png" alt="">
+        <button class="btn btn-gallery">Red collection</button>
+      </div>
+        <div class="gallery-card">
+        <img class="gallery-img" src="images/purple-airpods.png" alt="">
+        <button class="btn btn-gallery">Purple collection</button>
+      </div>
+        <div class="gallery-card">
+        <img class="gallery-img" src="images/blue-headphones.png" alt="">
+        <button class="btn btn-gallery">Blue collection</button>
+      </div>
+        <div class="gallery-card">
+        <img class="gallery-img" src="images/black-airpods.png" alt="">
+        <button class="btn btn-gallery">Black collection</button>
+      </div>
+      <div class="gallery-expand">
+        <button class="btn btn-gallery">See more</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="product">
+    <div class="product-content">
+      <h3 class="product-title">The Green collection</h3>
+      <p class="product-desc">Selected and designed with one word in mind - calm. Hence the color green, to be calming to your eyes as well as your ears. A pair of headphones with noise cancelling function, better than ever.</p>
+    </div>
+    <div class="product-cards">
+      <div class="product-card">
+        <img src="images/green-prod-1.png" alt="" class="product-card-img">
+        <div class="product-usp">
+          <i class="fa-solid fa-ear-listen product-usp-icon"></i>
+          <p class="product-text">Now with noise cancellation to help shut out the world when you need a break</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="images/green-prod-2.png" alt="" class="product-card-img">
+        <div class="product-usp">
+          <i class="fa-regular fa-bell product-usp-icon"></i>
+          <p class="product-text">Turn on notifications with Siri or Android voice assistants to know when you're needed</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="images/green-prod-3.png" alt="" class="product-card-img">
+        <div class="product-usp">
+          <i class="fa-regular fa-headphones product-usp-icon"></i>
+          <p class="product-text">Solid construction with smooth stuffing so that you can use them as long as you need</p>
+        </div>
+      </div>
+    </div>
+    
+     <div class="product-content">
+      <h3 class="product-title">The Green collection</h3>
+      <p class="product-desc">Selected and designed with one word in mind - calm. Hence the color green, to be calming to your eyes as well as your ears. A pair of headphones with noise cancelling function, better than ever.</p>
+    </div>
+    <div class="product-cards">
+      <div class="product-card">
+        <img src="images/pink-prod-1.png" alt="" class="product-card-img">
+        <div class="product-usp">
+          <i class="fa-solid fa-ear-listen product-usp-icon"></i>
+          <p class="product-text">Now with noise cancellation to help shut out the world when you need a break</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="images/pink-prod-2.png" alt="" class="product-card-img">
+        <div class="product-usp">
+          <i class="fa-regular fa-bell product-usp-icon"></i>
+          <p class="product-text">Turn on notifications with Siri or Android voice assistants to know when you're needed</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="images/pink-prod-3.png" alt="" class="product-card-img">
+        <div class="product-usp">
+          <i class="fa-regular fa-headphones product-usp-icon"></i>
+          <p class="product-text">Solid construction with smooth stuffing so that you can use them as long as you need</p>
+        </div>
+      </div>
+    </div>
+    
+     <div class="product-content">
+      <h3 class="product-title">The Green collection</h3>
+      <p class="product-desc">Selected and designed with one word in mind - calm. Hence the color green, to be calming to your eyes as well as your ears. A pair of headphones with noise cancelling function, better than ever.</p>
+    </div>
+    <div class="product-cards">
+      <div class="product-card">
+        <img src="images/blue-prod-1.png" alt="" class="product-card-img">
+        <div class="product-usp">
+          <i class="fa-solid fa-ear-listen product-usp-icon"></i>
+          <p class="product-text">Now with noise cancellation to help shut out the world when you need a break</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="images/blue-prod-2.png" alt="" class="product-card-img">
+        <div class="product-usp">
+          <i class="fa-regular fa-bell product-usp-icon"></i>
+          <p class="product-text">Turn on notifications with Siri or Android voice assistants to know when you're needed</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="images/blue-prod-3.png" alt="" class="product-card-img">
+        <div class="product-usp">
+          <i class="fa-regular fa-headphones product-usp-icon"></i>
+          <p class="product-text">Solid construction with smooth stuffing so that you can use them as long as you need</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </body>
 </html>
