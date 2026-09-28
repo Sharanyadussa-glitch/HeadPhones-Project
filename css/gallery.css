@@ -16,7 +16,7 @@ a {
 /* ------- Header navbar ------- */
 .header-nav {
   color: var(--main-color);
-  height: 100px;
+  height: 120px;
   margin: 0;
   padding: 0;
 }
@@ -28,7 +28,7 @@ a {
 }
 .header-logo {
   align-self: center;
-  width: 400px;
+  width: 200px;
   height: 80%;
   margin: 0;
   padding: 0;
@@ -211,6 +211,7 @@ a {
   flex-wrap: wrap;
   min-width: 1240px;
   text-align: center;
+  margin-top: 0;
 }
 .product-content {
   width: 600px;
@@ -228,7 +229,7 @@ a {
   justify-content: center;
   display: grid;
   gap: 40px;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-columns: repeat(3, 1fr);
 }
 .product-card {
