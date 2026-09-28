@@ -201,7 +201,51 @@ body {
   border-bottom: none;
 }
 
+/* Centre the whole team section */
+.about-team {
+  color: #647e60;    /* Muted green */
+  font-size: 30px;   /* Heading size */
+  width: 90%;
+  max-width: 960px;
+  margin: 60px auto;    /* 60px above/below; centre horizontally */
+  padding: 0 20px;      /* 20px of space INSIDE the left/right edges */
+  box-sizing: border-box; /* Include padding within the width */
+  text-align: center;
+}
 
+.about-team p {
+  color: #010101;    /* Muted green */
+  font-size: 15px;
+  margin: 0 0 12px;
+}
+
+/* Green section heading */
+.about-team h2 {
+  color: #647e60;
+  font-size: 40px;
+  margin: 0 0 12px;
+}
+
+/* Place the four team cards side by side */
+.team-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+/* Give all four cards equal space */
+.team-card {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Fit each portrait inside its card */
+.team-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+}
 
 
 
