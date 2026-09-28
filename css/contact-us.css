@@ -1,21 +1,136 @@
 
+header{
+    background-color: var(--darklightgreen-color);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header button{
+    background-color: var(--main-color);
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+h1{
+    color: var(--main-color);
+    font-size: 58px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+.contact-boxes{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    padding-top: 50px;
+}
+
+/* --- HOW CAN WE HELP ---*/
+.help{
+    background-color: var(--main-color);
+    border-radius: 80px;
+    width: 1100px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    line-height: 5px;
+}
+
+/* --- CONTACT INFO --- */
+.contact-info{
+    background-color: var(--main-color);
+    border-radius: 80px;
+    width: 500px;
+    height: 555px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 45px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.contact-info h2,
+.location h2{
+    font-size: 40px;
+    line-height: 0px;
+}
+
+.contact-info a{
+    font-size: 20px;
+    line-height: 45px;
+}
+
+/* --- LOCATION BOX ---*/
+
+.location{
+    background-color: var(--main-color);
+    border-radius: 80px;
+    width: 500px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.location img{
+    width: 370px;
+    height: 222px;
+    border-radius: 80px;
+    padding-top: 20px;
+}
+
+/* --- CONTACT FORM --- */
+
+.image-form{
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-form h2{
+    font-size: 78px;
+    color: var(--main-color);
+}
+
 .contact-form{
     /* --- Background --- */
     background-color: var(--lightgreen-color); 
     min-height: 100vh;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    padding-right: 60px;
+    flex-direction: column;
+    padding-bottom: 130px;
 }
 
 .contact-form__bg{
-    /* --- the div or picture frame" --- */
+    /* --- the div or "picture frame" --- */
     width: 875px;
     height: 934px;
-    padding-right: 150px;
-    flex-shrink: 0;
+    flex-shrink: 0; 
     overflow: hidden;
+    /*flex shrink makes sure that the item can never shrink smaller than it's set size*/
 }
 
 .contact-form__bg img{
@@ -99,7 +214,7 @@ textarea:focus,
 input:focus,
 select:focus{
     outline: 2px solid var(--darklightpink-color);
-    outline-offset: -5px; /* for the outline to have some padding inside the boc*/
+    outline-offset: -5px; /* for the outline to have some padding inside the box*/
 }
 
 form input:hover, 
@@ -147,7 +262,6 @@ form textarea{
     background-image: url(../images/square-solid-full.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    pointer-events: none;
     left: 0;
 }
 
@@ -170,7 +284,7 @@ a:hover{
 /* --- Button --- */
 button{
     background-color: var(--darklightgreen-color);
-    color: var(--lightpink-color);
+    color: var(--whitepink-color);
     font-weight: 800;
     border: none;
     border-radius: 40px;
@@ -185,4 +299,91 @@ button{
 button:hover{
     background-color: darkolivegreen;
     color: white;
+}
+
+/* --- FOOTER --- */
+footer{
+    background-color: var(--darklightgreen-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    gap: 20px;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.nav-socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer a:hover,
+header a:hover{
+    color: var(--main-color);
+}
+
+.socials{
+    display: flex;
+    flex-direction: row;
+    font-size: 40px;
+}
+
+.nav-socials p{
+    font-size: 25px;
+    line-height: 0;
+}
+
+/* --- SUBSCRIBE FORM --- */
+
+.subscribe-form{
+    color: var(--main-color);
+    background-color: var(--lightgreen-color);
+    border-radius: 80px;
+    /*border: solid;
+    border-color: var(--main-color);*/
+    width: 750px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.subscribe-form form{
+    gap: 15px;
+}
+
+.subscribe-form label{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.input-button{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.subscribe-form input{
+    width: 400px;
+}
+
+.subscribe-form button{
+    background-color: var(--main-color);
+}
+
+.subscribe-form button:hover{
+    background-color: darkolivegreen;
 }
