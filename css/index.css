@@ -200,7 +200,8 @@ body {
 
     width: 100%;
 
-    padding: 90px 5%;
+    padding: 2em;
+    padding: auto;
 
     box-sizing: border-box;
 
@@ -312,7 +313,7 @@ body {
 /* Green */
 
 .green-card {
-    background: #D9DFCD;
+    background: #E8B1B9;
 }
 
 
@@ -524,3 +525,323 @@ body {
     }
 
 } 
+
+/* ================================
+   ABOUT US SECTION
+================================ */
+
+.about-section {
+    width: 100%;
+   padding: 2em;
+   padding: auto;
+
+    background: #f7f5e9;
+    box-sizing: border-box;
+}
+
+.about-container {
+    max-width: 1250px;
+    min-height: 560px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    background: #f1ebea;
+
+    border-radius: 30px;
+    overflow: hidden;
+
+    position: relative;
+}
+
+
+/* ================================
+   LEFT IMAGE AREA
+================================ */
+
+/*.about-image {
+    position: relative;
+    min-height: 560px;
+
+    background:#62715E ;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+
+/* Pink curved shape behind headphones */
+
+/*.pink-shape {
+    position: absolute;
+
+    width: 430px;
+    height: 430px;
+
+    right: -70px;
+    top: -40px;
+
+    background: #BD7482;
+
+    border-radius: 50%;
+
+    opacity: 0.95;
+}
+
+
+/* Headphone image */
+
+.about-image img {
+    position: relative;
+    z-index: 3;
+
+    width: 82%;
+    max-width: 520px;
+
+    height: auto;
+
+    object-fit: contain;
+
+    filter: drop-shadow(
+        0 25px 25px rgba(40, 60, 45, 0.18)
+    );
+}
+
+
+/* ================================
+   DECORATIVE LEAVES
+================================ */
+
+.leaf {
+    position: absolute;
+
+    width: 180px;
+    height: 260px;
+
+    background: rgba(114, 184, 131, 0.18);
+
+    border-radius: 100% 0 100% 0;
+
+    filter: blur(5px);
+
+    z-index: 1;
+}
+
+.leaf-one {
+    left: -70px;
+    bottom: -80px;
+
+    transform: rotate(25deg);
+}
+
+.leaf-two {
+    right: -80px;
+    bottom: -90px;
+
+    transform: rotate(-25deg);
+}
+
+
+/* ================================
+   RIGHT CONTENT
+================================ */
+
+.about-content {
+    padding: 75px 70px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    position: relative;
+
+    z-index: 5;
+}
+
+
+/* Small heading */
+
+.about-label {
+    display: block;
+
+    margin-bottom: 18px;
+
+    color: #73986F;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 5px;
+}
+
+
+/* Main heading */
+
+.about-content h2 {
+    margin: 0 0 25px;
+
+    color: #111;
+
+    font-size: clamp(42px, 4vw, 68px);
+
+    line-height: 0.98;
+
+    font-weight: 800;
+
+    letter-spacing: -2px;
+}
+
+
+/* Pink part of heading */
+
+.about-content h2 span {
+    display: block;
+
+    color: #BD7482;
+}
+
+
+/* Paragraph */
+
+.about-content p {
+    max-width: 560px;
+
+    margin: 0 0 35px;
+
+    color: #53665a;
+
+    font-size: 17px;
+
+    line-height: 1.65;
+
+    font-weight: 500;
+}
+
+
+/* ================================
+   ABOUT BUTTON
+================================ */
+
+.about-button {
+    width: fit-content;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 15px 27px;
+
+    background: #BD7482;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 50px;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    transition: all 0.25s ease;
+}
+
+.about-button span {
+    font-size: 20px;
+
+    transition: transform 0.25s ease;
+}
+
+.about-button:hover {
+    background: #a95f6e;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 25px rgba(189, 116, 130, 0.25);
+}
+
+.about-button:hover span {
+    transform: translateX(5px);
+}
+
+
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 900px) {
+
+    .about-section {
+        padding: 60px 5%;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+
+        border-radius: 25px;
+    }
+
+    .about-image {
+        min-height: 450px;
+    }
+
+    .about-content {
+        padding: 55px 40px;
+    }
+
+    .about-content h2 {
+        font-size: 48px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .about-section {
+        padding: 35px 20px;
+    }
+
+    .about-container {
+        border-radius: 20px;
+    }
+
+    .about-image {
+        min-height: 330px;
+    }
+
+    .about-image img {
+        width: 90%;
+    }
+
+    .pink-shape {
+        width: 280px;
+        height: 280px;
+    }
+
+    .about-content {
+        padding: 40px 25px;
+    }
+
+    .about-label {
+        font-size: 12px;
+        letter-spacing: 4px;
+    }
+
+    .about-content h2 {
+        font-size: 40px;
+        letter-spacing: -1px;
+    }
+
+    .about-content p {
+        font-size: 15px;
+    }
+}
