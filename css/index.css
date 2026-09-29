@@ -82,12 +82,13 @@ nav a, nav a:visited, nav a:hover, nav a:active {
   font-size: 15px;
   letter-spacing: 4px;
   font-weight: 600;
-  color: #56705b;
+  color: #73986F;
   margin-bottom: 30px;
 }
 h1 {
 
   font-size: clamp(70px, 8vw, 125px);
+  color:  #73986F;
 
   line-height: 0.9;
 
@@ -106,7 +107,7 @@ h1 span {
   max-width: 500px;
   font-size: 20px;
   line-height: 1.5;
-  color: #56705b;
+  color: black;
   margin-bottom: 40px;
 }
 
@@ -231,7 +232,7 @@ body {
 .gallery-label {
     margin-bottom: 15px;
 
-    color: #62715E;
+    color: #73986F;
 
     font-size: 13px;
 
@@ -243,7 +244,8 @@ body {
 .gallery-heading h2 {
     margin: 0;
 
-    color: #111;
+
+    color:  #73986F;
 
     font-size: clamp(45px, 6vw, 72px);
 
@@ -261,7 +263,7 @@ body {
 
     margin: 20px auto 0;
 
-    color: #687466;
+    color: #73986F;
 
     font-size: 17px;
 
@@ -313,14 +315,15 @@ body {
 /* Green */
 
 .green-card {
-    background: #E8B1B9;
+    
+    background: #D0A2AD;
 }
 
 
 /* Pink */
 
 .pink-card {
-    background: #E8B1B9;
+    background: #D0A2AD;
 }
 
 
@@ -352,7 +355,8 @@ body {
 .gallery-card-text h3 {
     margin: 0 0 15px;
 
-    color: #111;
+
+    color: #5F6B5D;
 
     font-size: 28px;
 
@@ -364,7 +368,7 @@ body {
 .gallery-card-text p {
     margin: 0;
 
-    color: #5F6B5D;
+    color: black;
 
     font-size: 14px;
 
@@ -686,7 +690,7 @@ body {
 .about-content h2 {
     margin: 0 0 25px;
 
-    color: #111;
+    color: #73986F;
 
     font-size: clamp(42px, 4vw, 68px);
 
@@ -714,7 +718,7 @@ body {
 
     margin: 0 0 35px;
 
-    color: #53665a;
+    color: black;
 
     font-size: 17px;
 
