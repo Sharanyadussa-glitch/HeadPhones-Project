@@ -11,17 +11,30 @@
     --lightpink-color: #EED4D6;
     --whitepink-color: #F6EEEF;
 
+
     /* --- Green Colors --- */
     --darklightgreen-color: #73986F;
     --lightgreen-color: #ACB9A6;
 
+    /* --- Font colors --- */
+    --p-color: #2A2A2A;
+    /* h1, h2, h3, h4, h5, h6 green color = darklightgreen-color */
+    /* span h1, h2, h3, h4, h5, h6 pink color = main color */
+    --desc-green: #56705B; /*Used for Eyebrow and descreption text */
+
+    /* --- Button colors --- */
+    /* Primary button text color = whitepink color */
+    /* Primary button bakground color = main color */
+    /* Secondary button text color = main color */
+    --scnd-bkgr-pink: #F3D3D5; /* Secondary button bakground color */
+    /* Thirdary button text color = whitepink color */
+    --thrid-bkgr-green: #68996B; /* Thirdary button bakground color */
+
+    /* --- Background colors --- */
+    --mint-bkgr: #E1E8D4;
+    --offwhite-bkgr: #F7F7ED;
+    --pink-bkgr: #E8B1B9;
+
     /* --- Fonts --- */
     --font-main: "roboto", sans-serif;
 }
-
-body{
-    font-family: var(--font-main);
-    font-weight: 900;
-    color: var(--lightpink-color);
-}
-
