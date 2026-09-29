@@ -19,9 +19,13 @@ ul{
 
 h1{
     color: var(--main-color);
-    font-size: 58px;
+    font-size: 70px;
     display: flex;
     justify-content: center;
+}
+
+section{
+    padding: 6em 2em 4em 2em;
 }
 
 .contact{
@@ -40,9 +44,14 @@ h1{
     padding-top: 50px;
 }
 
+.contact{
+    background-color: var();
+}
+
 /* --- HOW CAN WE HELP ---*/
 .help{
-    background-color: var(--main-color);
+    color: var(--main-color);
+    border: dotted 2px;
     border-radius: 80px;
     width: 1100px;
     height: 200px;
@@ -50,32 +59,36 @@ h1{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 20px;
+    padding-top: 45px;
+    padding-bottom: 45px;
     line-height: 5px;
 }
 
 /* --- CONTACT INFO --- */
 .contact-info{
-    background-color: var(--main-color);
+    color: var(--main-color);
+    border: dotted 2px;
     border-radius: 80px;
     width: 500px;
-    height: 555px;
+    height: 600px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     padding-top: 45px;
-    padding-bottom: 20px;
+    padding-bottom: 45px;
     text-align: center;
 }
 
 .contact-info h2,
-.location h2{
-    font-size: 40px;
+.location h2,
+.help h2{
+    font-size: 45px;
     line-height: 0px;
 }
 
 .contact-info a{
+    color: var(--main-color);
     font-size: 20px;
     line-height: 45px;
 }
@@ -83,7 +96,8 @@ h1{
 /* --- LOCATION BOX ---*/
 
 .location{
-    background-color: var(--main-color);
+    color: var(--main-color);
+    border: dotted 2px;
     border-radius: 80px;
     width: 500px;
     height: 600px;
@@ -91,7 +105,8 @@ h1{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-bottom: 20px;
+    padding-top: 45px;
+    padding-bottom: 45px;
 }
 
 .location img{
@@ -109,7 +124,7 @@ h1{
 }
 
 .contact-form h2{
-    font-size: 78px;
+    font-size: 50px;
     color: var(--main-color);
 }
 
@@ -201,7 +216,7 @@ select{
     padding: 20px;
     font-size: 15px;
     font-weight: 500;
-    padding-left: 10px;
+    padding-left: 15px;
 
     appearance: none;
     background-image: url(../images/angle-down-solid-full.svg);
@@ -263,6 +278,10 @@ form textarea{
     background-size: contain;
     background-repeat: no-repeat;
     left: 0;
+}
+
+.checkbox:hover + .checkmark{
+    transform: scale(2);
 }
 
 .checkbox:checked + .checkmark{

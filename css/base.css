@@ -38,3 +38,12 @@
     /* --- Fonts --- */
     --font-main: "roboto", sans-serif;
 }
+
+
+body{
+    font-family: var(--font-main);
+    font-weight: 900;
+    font-size: 18px;
+    color: var(--lightpink-color);
+}
+
