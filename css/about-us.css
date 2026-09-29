@@ -2,7 +2,33 @@
 /* 1. Page defaults: remove outer spacing and set the font */
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif
+  font-family: "Roboto", sans-serif;
+  background: #e1e8d4;
+}
+
+/* Paragraph text: black */
+p {
+  color: #000;
+  font-size: 18px;
+}
+
+/* All headings: team green */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #647e60;
+}
+
+/* Standard heading sizes */
+h1 {
+  font-size: 70px;
+}
+
+h2 {
+  font-size: 45px;
 }
 
 /* 2. Header layout: place the logo and navigation side by side */
@@ -11,7 +37,7 @@ body {
   padding: 20px 5%;
   align-items: center;
   justify-content: space-between;
-   border-bottom: 1px solid #e5e5e5;  /* This draws one line across the bottom of the entire header.*/
+  border-bottom: 1px solid #e5e5e5;  /* This draws one line across the bottom of the entire header.*/
 }
 
 /* 3. Logo: set the size, weight and colour */
@@ -52,17 +78,19 @@ body {
 /* Main content: introduction, values and team */
 .about-container {
   color: #647e60;
-  font-size: 60px;
   font-weight: 700;
   text-align: center;
+  line-height: 1.1;
+  margin: 0; /* Let the container control the surrounding space */
+  padding: 6em 2em 4em 2em;
 }
 
 .about-container h1 {
   color: #647e60;
-  font-size: 60px;
+  font-size: 70px; /* Team's required heading size */
   font-weight: 700;
   line-height: 1.1;
-  margin: 40px 0;
+  margin: 0;
 }
 
 /* Introduction layout: arrange the two containers side by side */
@@ -78,7 +106,7 @@ body {
 
 .about-intro-text h2 {
   color: #647e60;
-  font-size: 60px;
+  font-size: 45px;
   font-weight: 700;
   line-height: 1; /*brings the two heading lines close together.*/
   margin: 0 0 24px;/*removes the top and side margins and leaves 24px below.*/
@@ -86,15 +114,14 @@ body {
 
 .about-intro-text p {
   font-size: 18px;
-  line-height: 1.5;
-  color: #444;
+  line-height: 1.6; /* Slightly more space between lines */
 }
 
 .about-intro-image img { /* the spac followed by style the image inside the container, rather than the container itself.*/
   width: 100%;
   height: auto; /*lets the browser calculate the image’s height to keep its original proportions when its width changes*/
   display: block;/*makes the image behave as a block element.*/
-  border-radius:24px
+  border-radius:80px;
 }
 
 /* Give the text and image containers equal space */
@@ -105,7 +132,7 @@ body {
 }
 
 /* Collection link: pink rounded button */
-.about-intro-text .button {
+.about-intro-text .btn {
   display: inline-block;
   background-color: #bb7889;
   color: white;
@@ -114,13 +141,15 @@ body {
   text-decoration: none;
   padding: 14px 28px;
   border-radius: 30px;
+  margin-top: 12px; /* Add space above the button */
 }
 
 /* Our Values: title on the left and value list on the right */
 .about-values {
   width: 90%;
   max-width: 960px;
-  margin: 60px auto 0;
+  margin: 0 auto; /* Centres the section horizontally */
+  padding: 6em 2em 4em 2em;
   display: flex;
   align-items: center;
   gap: 40px;
@@ -140,7 +169,7 @@ body {
 
 .values-title h2 {
   color: white; /* White heading */
-  font-size: 48px;
+  font-size: 45px;
   line-height: 1.1; /*keeps the two lines close together.*/
   text-align: center;
   margin: 0;
@@ -184,8 +213,6 @@ body {
 
 /* Description below each heading */
 .about-values-text p {
-  color: #444;       /* Dark grey */
-  font-size: 16px;
   line-height: 1.5;
   margin: 0;         /* Remove default paragraph spacing */
 
@@ -203,26 +230,22 @@ body {
 
 /* Centre the whole team section */
 .about-team {
-  color: #647e60;    /* Muted green */
-  font-size: 30px;   /* Heading size */
   width: 90%;
   max-width: 960px;
-  margin: 60px auto;    /* 60px above/below; centre horizontally */
-  padding: 0 20px;      /* 20px of space INSIDE the left/right edges */
+  margin: 0 auto 60px;    /* No top margin */
+  padding: 2em 2em 4em; /* Smaller top padding */
   box-sizing: border-box; /* Include padding within the width */
   text-align: center;
 }
 
 .about-team p {
-  color: #010101;    /* Muted green */
-  font-size: 15px;
+  font-size: 18px;
   margin: 0 0 12px;
 }
 
 /* Green section heading */
 .about-team h2 {
-  color: #647e60;
-  font-size: 40px;
+  font-size: 45px;
   margin: 0 0 12px;
 }
 
@@ -230,8 +253,10 @@ body {
 .team-list {
   display: flex;
   justify-content: space-between;
-  gap: 24px;
+  gap: 32px; /* More space between the cards */
+  margin-top: 32px; /* More space above the cards */
 }
+
 
 /* Give all four cards equal space */
 .team-card {
@@ -245,6 +270,16 @@ body {
   height: auto;
   display: block;
   border-radius: 16px;
+}
+
+/* Team member name */
+.team-card h3 {
+  margin: 12px 0 4px; /* 12px above, 4px below */
+}
+
+/* Team member role */
+.team-card p {
+  margin: 0; /* Remove the paragraph's default spacing */
 }
 
 
