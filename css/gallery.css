@@ -3,13 +3,31 @@
 
 body {
   min-width: 1240px;
-  color: #000;
+  color: #2A2A2A;
   line-height: 1.5;
   font-size: 18px;
   font-weight: 400;
 }
 a {
   text-decoration: none;
+}
+section {
+  padding: 6em 2em 4em 2em;
+}
+h1 {
+  font-size: 70px;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--darklightgreen-color);
+  margin: 12px 0 12px 0;
+}
+h2 {
+  font-size: 45px;
+  color: var(--main-color);
+}
+h3 {
+  font-size: 32px;
+  color: var(--darklightgreen-color);
 }
 
 
@@ -63,8 +81,7 @@ a {
   justify-content: center;
   flex-wrap: wrap;
   min-width: 1240px;
-  padding: 2em;
-  background-color: #E4EAD6;
+  background-color: #E1E8D4;
 }
 .hero-content {
   width: 700px;
@@ -74,23 +91,16 @@ a {
   font-size: 16px;
   font-weight: 800;
   text-transform: uppercase;
-  color: var(--main-color);
-}
-.hero-title {
-  font-family: "Space Grotesk", sans-serif!important;
-  font-weight: 800;
-  font-size: 5em;
-  line-height: 1;
-  color: var(--darklightgreen-color);
-  margin: 12px 0 12px 0;
+  color: var(--desc-green);
+  letter-spacing: 18%;
 }
 .hero-title--pink {
   color: var(--main-color);
 }
 .hero-desc {
-  font-size: 20px;
+  color: var(--desc-green);
+  font-weight: 700;
   width: 600px;
-  font-weight: 500;
 }
 .hero-info {
   width: 600px;
@@ -98,7 +108,7 @@ a {
 .btn-primary {
   background-color: var(--main-color);
   margin-top: 3em;
-  color: #fff;
+  color: var(--whitepink-color);
 }
 .hero-img {
   width: 700px;
@@ -139,25 +149,23 @@ a {
 /* ------- Gallery section ------- */
 
 .gallery {
-  margin-top: 2em;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   min-width: 1240px;
-  padding: 2em;
+  background-color: #F7F7ED;
 }
 .gallery-content {
   width: 800px;
   padding: 2em;
 }
 .gallery-title {
-  color: var(--main-color);
-  font-size: 4em;
   text-align: center;
   margin-bottom: 20px;
 }
 .gallery-desc {
-  font-size: 20px;
+  font-weight: 700;
+  color: var(--desc-green);
   text-align: center;
 }
 .gallery-cards {
@@ -166,7 +174,6 @@ a {
   gap: 33px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: repeat(2, 1fr);
-  margin-bottom: 4em;
 }
 .gallery-card {
   display: flex;
@@ -191,13 +198,12 @@ a {
 .btn-gallery {
   background-color: var(--lightpink-color);
   color: var(--main-color);
- 
   margin-top: 0;
   position: absolute;
 }
 .btn-gallery:hover {
   background-color: var(--darklightpink-color);
-  color: #fff;
+  color: var(--main-color);
 }
 .gallery-expand {
   grid-column: 2;
@@ -213,20 +219,27 @@ a {
   flex-wrap: wrap;
   min-width: 1240px;
   text-align: center;
-  margin-top: 0;
+  background-color: #F7F7ED;
 }
 .product-content {
   width: 700px;
 }
+.product-eyebrow {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--desc-green);
+  letter-spacing: 18%;
+  font-weight: 700;
+}
 .product-title {
-  font-size: 3em;
-  color: var(--darklightgreen-color);
   margin: 0 0 20px 0;
 }
 .product-desc {
-  font-size: 20px;
+  font-weight: 700;
+  color: var(--desc-green);
 }
 .product-cards {
+  height: 650px;
   margin-top: 2em;
   justify-content: center;
   display: grid;
@@ -248,20 +261,37 @@ a {
   border-radius: 80px;
 }
 .product-usp {
-  font-size: 20px;
-  width: 400;
-  height: 180px;
+  width: 400px;
+  height: 200px;
   text-align: center;
   margin-top: 1em;
   border: 2px dashed var(--darklightpink-color);
   border-radius: 80px;
-  padding: 2em;
+  padding: 2em 2em 0 2em;
 }
 .product-usp-icon {
   color: var(--main-color);
   background-color: var(--lightpink-color);
   padding: 1em;
   border-radius: 50%;
+  margin-bottom: 1em;
+}
+.product-expand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100px;
+  margin-bottom: 6em;
+}
+.btn-secondary {
+  background-color: var(--lightpink-color);
+  color: var(--main-color);
+  margin-top: 0;
+}
+.btn-secondary:hover {
+  background-color: var(--darklightpink-color);
+  color: var(--main-color);
 }
 
 /* ------- Footer ------- */
@@ -269,7 +299,6 @@ a {
   width: 100vw;
   height: 400px;
   color: var(--main-color)!important;
-  font-size: 23px;
   background-color: #E4EAD6;
 }
 .footer-navbar {
