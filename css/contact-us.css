@@ -1,14 +1,23 @@
 
 header{
-    background-color: var(--darklightgreen-color);
-    height: 80px;
+    background-color: var(--mint-bkgr);
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    border-bottom: solid lightgray 1px;
 }
 
 header button{
     background-color: var(--main-color);
+}
+
+header a{
+    color: var(--desc-green);
+}
+
+header a:hover{
+    color: var(--main-color);
 }
 
 ul{
@@ -24,17 +33,26 @@ h1{
     justify-content: center;
 }
 
+p{
+    font-size: 18px;
+}
+
+.logo{
+    width: 200px;
+    height: 30%;
+}
+
 section{
     padding: 6em 2em 4em 2em;
 }
+
+/* --- MULTIPLE CONTACT BOXES --- */
 
 .contact{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 130px;
-    padding-bottom: 130px;
 }
 
 .contact-boxes{
@@ -45,7 +63,7 @@ section{
 }
 
 .contact{
-    background-color: var();
+    background-color: var(--mint-bkgr);
 }
 
 /* --- HOW CAN WE HELP ---*/
@@ -112,8 +130,8 @@ section{
 .location img{
     width: 370px;
     height: 222px;
+    border: dotted 2px;
     border-radius: 80px;
-    padding-top: 20px;
 }
 
 /* --- CONTACT FORM --- */
@@ -136,7 +154,6 @@ section{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-bottom: 130px;
 }
 
 .contact-form__bg{
@@ -289,15 +306,11 @@ form textarea{
 }
 
 a{
-    color: var(--whitepink-color);
-}
-
-a:visited{
-    color: var(--lightpink-color);
+    color: var(--pink-bkgr);
 }
 
 a:hover{
-    color: var(--lightgreen-color);
+    color: var(--offwhite-bkgr);
 }
 
 /* --- Button --- */
@@ -322,7 +335,8 @@ button:hover{
 
 /* --- FOOTER --- */
 footer{
-    background-color: var(--darklightgreen-color);
+    background-color: var(--pink-bkgr);
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -346,9 +360,12 @@ footer{
     gap: 10px;
 }
 
-footer a:hover,
-header a:hover{
+footer a{
     color: var(--main-color);
+}
+
+footer a:hover{
+    color: var(--desc-green);
 }
 
 .socials{
@@ -357,7 +374,12 @@ header a:hover{
     font-size: 40px;
 }
 
+footer p{
+    color: var(--main-color);
+}
+
 .nav-socials p{
+    color: var(--main-color);
     font-size: 25px;
     line-height: 0;
 }
@@ -366,10 +388,8 @@ header a:hover{
 
 .subscribe-form{
     color: var(--main-color);
-    background-color: var(--lightgreen-color);
+    background-color: var( --scnd-bkgr-pink);
     border-radius: 80px;
-    /*border: solid;
-    border-color: var(--main-color);*/
     width: 750px;
     height: 150px;
     display: flex;
