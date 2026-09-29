@@ -55,7 +55,10 @@ h3 {
 
 /* ------- Header navbar ------- */
 .header-nav {
-  color: var(--main-color);
+  background-color: var(--mint-bkgr);
+  color: var(--desc-green);
+  font-weight: 700;
+  border-bottom: 1px solid var(--darklightgreen-color);
   height: 120px;
   margin: 0;
   padding: 0;
@@ -78,7 +81,7 @@ h3 {
 }
 .header-navbar-list {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -86,15 +89,14 @@ h3 {
   font-size: 20px;
 }
 .header-navbar-link:visited {
-  color: var(--main-color);
+  color: var(--desc-green);
 }
 .header-navbar-link:hover {
-  color: var(--darklightpink-color);
+  color: var(--lightgreen-color);
 }
 .header-navbar-item {
   width: 150px;
 }
-
 
 /* ------- Hero section ------- */
 
@@ -126,9 +128,7 @@ h3 {
 }
 .hero-info {
   width: 600px;
-}
-.btn-primary {
-  margin-top: 3em;
+  margin-bottom: 3em;
 }
 .hero-img {
   width: 700px;
@@ -312,8 +312,109 @@ h3 {
   color: var(--main-color);
 }
 
+/* --- Edins FOOTER --- */
+footer{
+  background-color: var(--pink-bkgr);
+  height: 400px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em 0 1em 0;
+}
+.footer-content{
+  display: flex;
+  flex-direction: row;
+}
+.footer-logo {
+  width: 200px;
+  height: 80%;
+  margin: 0;
+  padding: 0;
+}
+.footer-logo-link:hover {
+  opacity: 0.5;
+}
+.nav-socials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 800px;
+}
+.nav-socials-list {
+  display: flex;
+  list-style: none;
+}
+.nav-social-item {
+  margin-right: 30px;
+}
+.nav-social-link {
+  color: var(--main-color);
+}
+.nav-social-link:hover {
+  color: var(--lightpink-color);
+}
+.socials{
+  display: flex;
+  flex-direction: row;
+  font-size: 40px;
+}
+.nav-socials > p {
+  color: var(--main-color);
+}
+
+/* --- SUBSCRIBE FORM --- */
+
+.subscribe-form{
+  color: var(--main-color);
+  background-color: var(--lightpink-color);
+  border-radius: 80px;
+  /*border: solid;
+  border-color: var(--main-color);*/
+  width: 750px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.subscribe-form label{
+  font-size: 25px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.input-button{
+  display: flex;
+  flex-direction: row;
+}
+.subscribe-form input{
+  width: 400px;
+  border-radius: 40px;
+  border: none;
+  padding-left: 20px;
+  margin-right: 20px;
+}
+.subscribe-form button{
+  background-color: var(--main-color);
+}
+.subscribe-form button:hover{
+  background-color: var(--whitepink-color);
+}
+.footer-policy {
+  margin-top: 4em;
+}
+
+
+
+
+
+
 /* ------- Footer ------- */
-.footer-nav {
+/* .footer-nav {
   width: 100vw;
   height: 400px;
   color: var(--main-color)!important;
@@ -348,4 +449,4 @@ h3 {
 }
 .footer-navbar-item {
   margin: 1.2em 0;
-}
+} */
