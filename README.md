@@ -1,5 +1,9 @@
 # HeadPhones-Project
 
+<<<<<<< HEAD
+## Git
+- git clone https:// xxxx (the URL of the project)
+=======
 # Git
 
 ## Clone a repository
@@ -34,3 +38,4 @@
 	- This takes the changes from the main branch branch in to your own branch
 - git merge origin/main
 	- This will merge all of the new changes from the main into your own branch
+>>>>>>> origin/main

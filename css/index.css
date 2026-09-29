@@ -1,0 +1,994 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #596c41;
+  color: #102f2a;
+  overflow-x: hidden;
+  
+}
+
+
+header {
+  height: 90px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  position: relative;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #c96f85;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+nav a, nav a:visited, nav a:hover {
+  color: #355044;
+}
+
+
+.buy-btn {
+  background: #c96f85;
+  color: white;
+  padding: 14px 30px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  
+}
+
+
+.button {
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+.hero {
+  min-height: calc(100vh - 90px);
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 6%;
+  overflow: hidden;
+}
+
+.hero-text {
+  width: 45%;
+  position: relative;
+  z-index: 3;
+}
+
+.eyebrow {
+  font-size: 15px;
+  letter-spacing: 4px;
+  font-weight: 600;
+  color: #73986F;
+  margin-bottom: 30px;
+}
+h1 {
+
+  font-size: clamp(70px, 8vw, 125px);
+  color:  #73986F;
+
+  line-height: 0.9;
+
+  letter-spacing: -6px;
+
+  margin-bottom: 30px;
+
+}
+
+
+h1 span {
+  color: #c96f85;
+}
+
+.description {
+  max-width: 500px;
+  font-size: 20px;
+  line-height: 1.5;
+  color: black;
+  margin-bottom: 40px;
+}
+
+.shop-btn {
+  background: #c96f85;
+  color: white;
+  padding: 18px 38px;
+  border-radius: 35px;
+  font-size: 17px;
+}
+
+.product {
+  width: 55%;
+  height: 650px;
+  position: relative;
+  z-index: 3;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product img {
+  width: 90%;
+  max-width: 750px;
+  position: relative;
+  z-index: 3;
+
+  filter: drop-shadow(0 35px 25px rgba(40, 60, 45, 0.25));
+}
+.pink-shape {
+  position: absolute;
+
+  width: 1000px;
+  height: 430px;
+
+  right: -250px;
+  top: 230px;
+
+  background: #c96f85;
+
+  border-radius: 50%;
+
+  transform: rotate(-25deg);
+
+  opacity: 0.9;
+
+  z-index: 1;
+
+  background: linear-gradient(
+    135deg,
+    #d8879a,
+    #bd687e
+  );
+
+}
+
+.product {
+  z-index: 3;
+}
+
+body {
+  background:
+    radial-gradient(
+      circle at 20% 50%,
+      #edf1df 0%,
+      #dce5d0 45%,
+      #c7d5c0 100%
+    );
+
+  color: #102f2a;
+}
+
+.pink-shape {
+  background: linear-gradient(
+    135deg,
+    #d8879a,
+    #bd687e
+  );
+}
+
+
+
+
+   /* =========================================
+   GALLERY PREVIEW
+========================================= */
+
+.gallery-preview {
+    position: relative;
+
+    width: 100%;
+
+    padding: 2em;
+    padding: auto;
+
+    box-sizing: border-box;
+
+    background: #F7F7ED;
+
+    overflow: hidden;
+
+    /* IMPORTANT */
+    clear: both;
+ }
+
+
+/* Heading */
+
+.gallery-heading {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 800px;
+
+    margin: 0 auto 50px;
+
+    text-align: center;
+}
+
+.gallery-label {
+    margin-bottom: 15px;
+
+    color: #73986F;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 4px;
+}
+
+.gallery-heading h2 {
+    margin: 0;
+
+
+    color:  #73986F;
+
+    font-size: clamp(45px, 6vw, 72px);
+
+    line-height: 1;
+
+    letter-spacing: -3px;
+}
+
+.gallery-heading h2 span {
+    color: #BD7482;
+}
+
+.gallery-description {
+    max-width: 650px;
+
+    margin: 20px auto 0;
+
+    color: #73986F;
+
+    font-size: 17px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   THREE CARDS
+========================================= */
+
+.gallery-preview-grid {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    max-width: 1350px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+
+/* Card */
+
+.gallery-card {
+    position: relative;
+
+    height: 520px;
+
+    padding: 30px;
+
+    box-sizing: border-box;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+}
+
+
+/* Green */
+
+.green-card {
+    
+    background: #D0A2AD;
+}
+
+
+/* Pink */
+
+.pink-card {
+    background: #D0A2AD;
+}
+
+
+/* Number */
+
+.gallery-card-number {
+    position: relative;
+
+    z-index: 3;
+
+    color: #62715E;
+
+    font-size: 15px;
+
+    font-weight: 700;
+}
+
+
+/* Text */
+
+.gallery-card-text {
+    position: relative;
+
+    z-index: 3;
+
+    margin-top: 18px;
+}
+
+.gallery-card-text h3 {
+    margin: 0 0 15px;
+
+
+    color: #5F6B5D;
+
+    font-size: 28px;
+
+    line-height: 1;
+
+    letter-spacing: -1px;
+}
+
+.gallery-card-text p {
+    margin: 0;
+
+    color: black;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* Images */
+
+.gallery-card-image {
+    position: absolute;
+
+    left: 8%;
+
+    right: 8%;
+
+    bottom: 20px;
+
+    height: 270px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+.gallery-card-image img {
+    width: 100%;
+
+    height: 100%;
+  
+
+    object-fit: contain;
+
+    display: block;
+
+    filter:
+        drop-shadow(
+            0 18px 18px
+            rgba(70, 76, 64, 0.16)
+        );
+}
+
+.earbuds-image img {
+    width: 85%;
+   
+}
+
+
+/* =========================================
+   NEXT BUTTON
+========================================= */
+
+.gallery-next {
+    position: relative;
+
+    z-index: 3;
+    transition: transform 0.25s ease;
+
+    cursor: pointer;
+    width: 100%;
+
+    max-width: 1350px;
+
+    margin: 30px auto 0;
+
+    display: flex;
+
+    justify-content: flex-end;
+}
+
+.gallery-next a {
+    padding: 13px 28px;
+
+    border-radius: 50px;
+  
+
+    background: #BD7482;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================
+   DECORATION
+========================================= */
+
+.gallery-preview::before {
+    content: "";
+
+    position: absolute;
+
+    width: 400px;
+
+    height: 400px;
+
+    top: -230px;
+
+    right: -150px;
+
+    border-radius: 50%;
+
+    background: #E8AEB9;
+}
+
+.gallery-preview::after {
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+
+    height: 350px;
+
+    bottom: -230px;
+
+    left: -180px;
+
+    border-radius: 50%;
+
+    background: #E2E7D8;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .gallery-preview-grid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+    }
+
+    .gallery-card {
+        height: 500px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .gallery-preview {
+        padding: 60px 20px;
+    }
+
+    .gallery-heading h2 {
+        font-size: 44px;
+    }
+
+    .gallery-card {
+        height: 470px;
+    }
+
+} 
+
+/* ================================
+   ABOUT US SECTION
+================================ */
+
+.about-section {
+    width: 100%;
+   padding: 2em;
+   padding: auto;
+
+    background: #f7f5e9;
+    box-sizing: border-box;
+}
+
+.about-container {
+    max-width: 1250px;
+    min-height: 560px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    background: #f1ebea;
+
+    border-radius: 30px;
+    overflow: hidden;
+
+    position: relative;
+}
+
+
+/* ================================
+   LEFT IMAGE AREA
+================================ */
+
+/*.about-image {
+    position: relative;
+    min-height: 560px;
+
+    background:#62715E ;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+
+/* Pink curved shape behind headphones */
+
+/*.pink-shape {
+    position: absolute;
+
+    width: 430px;
+    height: 430px;
+
+    right: -70px;
+    top: -40px;
+
+    background: #BD7482;
+
+    border-radius: 50%;
+
+    opacity: 0.95;
+}
+
+
+/* Headphone image */
+
+.about-image img {
+    position: relative;
+    z-index: 3;
+
+    width: 82%;
+    max-width: 520px;
+
+    height: auto;
+
+    object-fit: contain;
+
+    filter: drop-shadow(
+        0 25px 25px rgba(40, 60, 45, 0.18)
+    );
+}
+
+
+/* ================================
+   DECORATIVE LEAVES
+================================ */
+
+.leaf {
+    position: absolute;
+
+    width: 180px;
+    height: 260px;
+
+    background: rgba(114, 184, 131, 0.18);
+
+    border-radius: 100% 0 100% 0;
+
+    filter: blur(5px);
+
+    z-index: 1;
+}
+
+.leaf-one {
+    left: -70px;
+    bottom: -80px;
+
+    transform: rotate(25deg);
+}
+
+.leaf-two {
+    right: -80px;
+    bottom: -90px;
+
+    transform: rotate(-25deg);
+}
+
+
+/* ================================
+   RIGHT CONTENT
+================================ */
+
+.about-content {
+    padding: 75px 70px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    position: relative;
+
+    z-index: 5;
+}
+
+
+/* Small heading */
+
+.about-label {
+    display: block;
+
+    margin-bottom: 18px;
+
+    color: #73986F;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 5px;
+}
+
+
+/* Main heading */
+
+.about-content h2 {
+    margin: 0 0 25px;
+
+    color: #73986F;
+
+    font-size: clamp(42px, 4vw, 68px);
+
+    line-height: 0.98;
+
+    font-weight: 800;
+
+    letter-spacing: -2px;
+}
+
+
+/* Pink part of heading */
+
+.about-content h2 span {
+    display: block;
+
+    color: #BD7482;
+}
+
+
+/* Paragraph */
+
+.about-content p {
+    max-width: 560px;
+
+    margin: 0 0 35px;
+
+    color: black;
+
+    font-size: 17px;
+
+    line-height: 1.65;
+
+    font-weight: 500;
+}
+
+
+/* ================================
+   ABOUT BUTTON
+================================ */
+
+.about-button {
+    width: fit-content;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 15px 27px;
+
+    background: #BD7482;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 50px;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    transition: all 0.25s ease;
+}
+
+.about-button span {
+    font-size: 20px;
+
+    transition: transform 0.25s ease;
+}
+
+.about-button:hover {
+    background: #a95f6e;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 25px rgba(189, 116, 130, 0.25);
+}
+
+.about-button:hover span {
+    transform: translateX(5px);
+}
+
+
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
+
+/*@media (max-width: 900px) {
+
+    .about-section {
+        padding: 60px 5%;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+
+        border-radius: 25px;
+    }
+
+    .about-image {
+        min-height: 450px;
+    }
+
+    .about-content {
+        padding: 55px 40px;
+    }
+
+    .about-content h2 {
+        font-size: 48px;
+    }
+}
+
+
+/*@media (max-width: 600px) {
+
+    .about-section {
+        padding: 35px 20px;
+    }
+
+    .about-container {
+        border-radius: 20px;
+    }
+
+    .about-image {
+        min-height: 330px;
+    }
+
+    .about-image img {
+        width: 90%;
+    }
+
+    .pink-shape {
+        width: 280px;
+        height: 280px;
+    }
+
+    .about-content {
+        padding: 40px 25px;
+    }
+
+    .about-label {
+        font-size: 12px;
+        letter-spacing: 4px;
+    }
+
+    .about-content h2 {
+        font-size: 40px;
+        letter-spacing: -1px;
+    }
+
+    .about-content p {
+        font-size: 15px;
+    }
+}
+
+/* --- Edins FOOTER --- */
+footer{
+  background-color: var(--pink-bkgr);
+  height: 400px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em 0 1em 0;
+}
+.footer-content{
+  display: flex;
+  flex-direction: row;
+}
+.footer-logo {
+  width: 200px;
+  height: 80%;
+  margin: 0;
+  padding: 0;
+}
+.footer-logo-link:hover {
+  opacity: 0.5;
+}
+.nav-socials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 800px;
+}
+.nav-socials-list {
+  display: flex;
+  list-style: none;
+}
+.nav-social-item {
+  margin-right: 30px;
+}
+.nav-social-link:visited{color: #6f6f6b;
+}
+ 
+
+.nav-social-link:hover {
+  color: var(--lightpink-color);
+}
+.socials{
+  display: flex;
+  flex-direction: row;
+  font-size: 40px;
+}
+.nav-socials > p {
+  color: var(--main-color);
+}
+
+/* --- SUBSCRIBE FORM --- */
+
+.subscribe-form{
+  color: var(--main-color);
+  background-color: var(--lightpink-color);
+  border-radius: 80px;
+  /*border: solid;
+  border-color: var(--main-color);*/
+  width: 750px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.subscribe-form label{
+  font-size: 25px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.input-button{
+  display: flex;
+  flex-direction: row;
+}
+.subscribe-form input{
+  width: 400px;
+  border-radius: 40px;
+  border: none;
+  padding-left: 20px;
+  margin-right: 20px;
+}
+.subscribe-form button{
+  background-color: var(--main-color);
+}
+.subscribe-form button:hover{
+  background-color: var(--whitepink-color);
+}
+.footer-policy {
+  margin-top: 4em;
+}
+
+
+
+
+
+
+/* ------- Footer ------- */
+/* .footer-nav {
+  width: 100vw;
+  height: 400px;
+  color: var(--main-color)!important;
+  background-color: #E4EAD6;
+}
+.footer-navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+.footer-navbar-list {
+  list-style: none;
+  text-align: left;
+}
+.footer-logo-link {
+  justify-content: flex-start;
+}
+.footer-logo-link:hover {
+  opacity: 0.5;
+}
+.footer-navbar-link:hover {
+  color: var(--darklightpink-color)!important;
+}
+.footer-navbar-link:visited {
+  color: var(--main-color);
+}
+.footer-navbar-socials {
+  display: inline-block;
+  text-align: center;
+  margin: 0 2em;
+}
+.footer-navbar-item {
+  margin: 1.2em 0;
+} */
