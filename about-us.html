@@ -7,23 +7,40 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Team-wide styles and colour variables -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css"> 
+    <!-- Styles used only on the About Us page -->
     <link rel="stylesheet" href="css/about-us.css">
-    <link rel="stylesheet" href="Style/style.css">
 </head>
-<body>
-    <!-- Header: logo and main navigation -->
-    <header class="site-header">
-        <!-- 1. Logo -->
-        <div class="logo">Smooth.<span></span></div>
 
-    <!-- 2. Main navigation -->
-        <nav class="header__nav">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="about-us.html" class="active">About Us</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+<body>
+    <header class="header-nav">
+        <nav class="header-navbar">
+            <a href="#" class="header-logo-link">
+            <img class="header-logo" src="images/smooth-logo.svg" alt="">
+            </a>
+
+        <ul class="header-navbar-list">
+            <a class="header-navbar-link" href="#">
+                <li class="header-navbar-item">Home</li>
+            </a>
+
+            <a class="header-navbar-link" href="#">
+                <li class="header-navbar-item">Products</li>
+            </a>
+
+            <a class="header-navbar-link" href="#">
+                <li class="header-navbar-item">About us</li></a>
+        
+            <a class="header-navbar-link" href="#">
+                <li class="header-navbar-item">Contact</li>
+            </a>
+        </ul>
+
+            <a href="#" class="header-cta">
+                <a href="gallery.html" class="header-cta btn">Buy now</a>
+            </a>
         </nav>
     </header>
 
@@ -122,6 +139,89 @@
                         <p>Team Member</p>
                     </div>
                 </section>
+
+        <footer>
+            <div class="footer-content">
+                <a href="#" class="footer-logo-link">
+                    <img class="footer-logo" src="images/smooth-logo.svg" alt="">
+                </a>  
+            <div class="nav-socials">
+                <nav>
+                    <ul class="nav-socials-list">
+                        <li class="nav-social-item"><a href="index.html" class="nav-social-link">Home</a></li>
+                        <li class="nav-social-item"><a href="gallery.html" class="nav-social-link">Products</a></li>
+                        <li class="nav-social-item"><a href="about-us.html" class="nav-social-link">About Us</a></li>
+                        <li class="nav-social-item"><a href="contact-us.html" class="nav-social-link">Contact Us</a></li>
+                    </ul>
+                </nav>
+            <div class="socials">
+                <a href="#" class="nav-social-link"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#" class="nav-social-link"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#" class="nav-social-link"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="#" class="nav-social-link"><i class="fa-brands fa-square-youtube"></i></a>
+            </div>
+
+        <p>@SmoothHeadphones</p>
+
+            </div>
+      <div class="subscribe-form">
+        <form action="">
+            <label for="subscribing">Subscribe to Our Newsletter!</label>
+            <div class="input-button">
+              <input type="email" id="subscribe" placeholder="Your Email" required>
+              <button type="submit" class="btn">Subscribe</button>
+            </div>
+        </form>
+      </div>
+    </div>
+    <p class="footer-policy"><a href="#">Privacy Policy</a> &copy; 2026 SmoothHeadphones. All rights reserved.</p>
+    <!--&copy is for getting the copyright symbol-->
+  </footer>
+
+  <!-- <footer class="footer-nav">
+    <nav class="footer-navbar">
+      <a href="#" class="footer-logo-link">
+        <img class="header-logo" src="images/smooth-logo.svg" alt="">
+      </a>
+      <ul class="footer-navbar-list">
+        <a class="footer-navbar-link" href="#">
+          <li class="footer-navbar-socials">
+            <i class="fa-brands fa-facebook"></i>
+            <p>Facebook</p>
+          </li>
+        </a>
+        <a class="footer-navbar-link" href="#">
+          <li class="footer-navbar-socials">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <p>Linkedin</p>
+          </li>
+        </a>
+        <a class="footer-navbar-link" href="#">
+          <li class="footer-navbar-socials">
+            <i class="fa-brands fa-instagram"></i>
+            <p>Instagram</p>
+          </li>
+        </a>
+      </ul>
+      <ul class="footer-navbar-list">
+        <a class="footer-navbar-link" href="#">
+          <li class="footer-navbar-item">Home</li>
+        </a>
+        <a class="footer-navbar-link" href="#">
+          <li class="footer-navbar-item">Products</li>
+        </a>
+        <a class="footer-navbar-link" href="#">
+          <li class="footer-navbar-item">About us</li>
+        </a>
+        <a class="footer-navbar-link" href="#">
+          <li class="footer-navbar-item">Contact</li>
+        </a>
+      </ul>
+    </nav>
+  </footer> -->
+
+</body>
+</html>
             </section>    
     </main>
 </body>

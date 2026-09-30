@@ -2,8 +2,11 @@
 /* 1. Page defaults: remove outer spacing and set the font */
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
-  background: #e1e8d4;
+  font-family: var(--font-main);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: var(--mint-bkgr);
 }
 
 /* Paragraph text: black */
@@ -31,50 +34,6 @@ h2 {
   font-size: 45px;
 }
 
-/* 2. Header layout: place the logo and navigation side by side */
-.site-header {
-  display: flex;
-  padding: 20px 5%;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid #e5e5e5;  /* This draws one line across the bottom of the entire header.*/
-}
-
-/* 3. Logo: set the size, weight and colour */
-.logo {
-  font-size: 28px;
-  font-weight: 700;
-  color: #647e60
-}
-
-/* 4. Navigation list: arrange links horizontally and remove bullets */
-.header__nav ul {
-  color: darkgreen;
-  display: flex;
-  gap: 28px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-/* 5. Navigation links: set the normal appearance */
-.header__nav a {
-  font-size: 16px;
-  font-weight: 400;
-  color: #444;
-  text-decoration: none;
-  padding-bottom: 6px;
-  border-bottom: 2px solid transparent
-}
-
-/* 6. Highlight the hovered link and the current page */
-.header__nav a:hover,
-.header__nav a.active {
-  color: #647e60;
-  font-weight: 700;
-  border-bottom: 2px solid #647e60;
-}
-
 /* Main content: introduction, values and team */
 .about-container {
   color: #647e60;
@@ -91,6 +50,70 @@ h2 {
   font-weight: 700;
   line-height: 1.1;
   margin: 0;
+}
+
+/* Header: green background and bottom dividing line */
+.header-nav {
+  background-color: var(--mint-bkgr);
+  color: var(--desc-green);
+  font-weight: 700;
+  border-bottom: 1px solid var(--darklightgreen-color);
+  height: 120px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Place the logo, navigation and button side by side */
+.header-navbar {
+  display: flex;
+  align-items: center;
+  min-height: 100%;
+  padding: 0 2em;
+}
+
+/* Smooth logo */
+.header-logo {
+  width: 200px;
+  height: 80%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Make the logo slightly transparent when hovered */
+.header-logo-link:hover {
+  opacity: 0.5;
+}
+
+/* Place the navigation links horizontally */
+.header-navbar-list {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 20px;
+}
+
+/* Keep each navigation item evenly sized */
+.header-navbar-item {
+  width: 150px;
+}
+
+/* Navigation link colour and remove underline */
+.header-navbar-link {
+  color: var(--desc-green);
+  text-decoration: none;
+}
+
+/* Keep visited links the same colour */
+.header-navbar-link:visited {
+  color: var(--desc-green);
+}
+
+/* Change the link colour when hovered */
+.header-navbar-link:hover {
+  color: var(--lightgreen-color);
 }
 
 /* Introduction layout: arrange the two containers side by side */
@@ -132,16 +155,9 @@ h2 {
 }
 
 /* Collection link: pink rounded button */
+/* Space above the Our Collection button */
 .about-intro-text .btn {
-  display: inline-block;
-  background-color: #bb7889;
-  color: white;
-  font-size: 16px;
-  font-weight: 700;
-  text-decoration: none;
-  padding: 14px 28px;
-  border-radius: 30px;
-  margin-top: 12px; /* Add space above the button */
+  margin-top: 12px;
 }
 
 /* Our Values: title on the left and value list on the right */
@@ -282,5 +298,37 @@ h2 {
   margin: 0; /* Remove the paragraph's default spacing */
 }
 
+/* Shared button appearance */
+.btn {
+  background-color: var(--main-color);
+  color: var(--whitepink-color);
+  font-weight: 800;
+  text-decoration: none; /* Remove underline when an <a> is a button */
+  border: none;
+  border-radius: 40px;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+}
 
+/* Secondary light-pink button */
+.btn-secondary {
+  background-color: var(--lightpink-color);
+  color: var(--main-color);
+}
+
+/* Secondary button hover effect */
+.btn-secondary:hover {
+  background-color: var(--darklightpink-color);
+  color: var(--main-color);
+}
+
+/* Keep the Buy now button at its full size */
+.header-cta {
+  flex-shrink: 0;
+}
 
