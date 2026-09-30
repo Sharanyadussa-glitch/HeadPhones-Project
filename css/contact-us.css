@@ -1,5 +1,4 @@
-
-header{
+header {
     background-color: var(--mint-bkgr);
     height: 100px;
     display: flex;
@@ -8,68 +7,79 @@ header{
     border-bottom: solid lightgray 1px;
 }
 
-header button{
+header button {
     background-color: var(--main-color);
 }
 
-header a{
-    color: var(--desc-green);
-}
-
-header a:hover{
+header button:hover {
+    background-color: var(--lightpink-color);
     color: var(--main-color);
 }
 
-ul{
+header a {
+    color: var(--desc-green);
+    text-decoration: none;
+}
+
+header a:hover {
+    color: var(--lightgreen-color);
+
+}
+
+ul {
     list-style-type: none;
     display: flex;
     gap: 30px;
 }
 
-h1{
+h1 {
     color: var(--main-color);
     font-size: 70px;
     display: flex;
     justify-content: center;
 }
 
-p{
+p {
     font-size: 18px;
 }
 
 .logo{
     width: 200px;
-    height: 30%;
+    height: 80%;
 }
 
-section{
+.logo:hover{
+    opacity: 0.5;
+}
+
+section {
     padding: 6em 2em 4em 2em;
 }
 
 /* --- MULTIPLE CONTACT BOXES --- */
 
-.contact{
+.contact {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.contact-boxes{
+.contact-boxes {
     display: flex;
     flex-direction: row;
     gap: 100px;
     padding-top: 50px;
 }
 
-.contact{
+.contact {
     background-color: var(--mint-bkgr);
 }
 
 /* --- HOW CAN WE HELP ---*/
-.help{
+.help {
     color: var(--main-color);
-    border: dotted 2px;
+    border: dashed 2px;
     border-radius: 80px;
     width: 1100px;
     height: 200px;
@@ -83,9 +93,9 @@ section{
 }
 
 /* --- CONTACT INFO --- */
-.contact-info{
+.contact-info {
     color: var(--main-color);
-    border: dotted 2px;
+    border: dashed 2px;
     border-radius: 80px;
     width: 500px;
     height: 600px;
@@ -100,12 +110,12 @@ section{
 
 .contact-info h2,
 .location h2,
-.help h2{
+.help h2 {
     font-size: 45px;
     line-height: 0px;
 }
 
-.contact-info a{
+.contact-info a {
     color: var(--main-color);
     font-size: 20px;
     line-height: 45px;
@@ -113,9 +123,9 @@ section{
 
 /* --- LOCATION BOX ---*/
 
-.location{
+.location {
     color: var(--main-color);
-    border: dotted 2px;
+    border: dashed 2px;
     border-radius: 80px;
     width: 500px;
     height: 600px;
@@ -127,28 +137,28 @@ section{
     padding-bottom: 45px;
 }
 
-.location img{
+.location img {
     width: 370px;
     height: 222px;
-    border: dotted 2px;
+    border: dashed 2px;
     border-radius: 80px;
 }
 
 /* --- CONTACT FORM --- */
 
-.image-form{
+.image-form {
     display: flex;
     flex-direction: row;
 }
 
-.contact-form h2{
+.contact-form h2 {
     font-size: 50px;
     color: var(--main-color);
 }
 
-.contact-form{
+.contact-form {
     /* --- Background --- */
-    background-color: var(--lightgreen-color); 
+    background-color: var(--lightgreen-color);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -156,26 +166,26 @@ section{
     flex-direction: column;
 }
 
-.contact-form__bg{
+.contact-form__bg {
     /* --- the div or "picture frame" --- */
     width: 875px;
     height: 934px;
-    flex-shrink: 0; 
+    flex-shrink: 0;
     overflow: hidden;
     /*flex shrink makes sure that the item can never shrink smaller than it's set size*/
 }
 
-.contact-form__bg img{
+.contact-form__bg img {
     /* --- Background Image --- */
-    width:875px ;
+    width: 875px;
     height: 934px;
     object-fit: cover;
 }
 
-.form-box{
+.form-box {
     /* --- Container --- */
     background-color: var(--main-color);
-    width: 505px; 
+    width: 505px;
     height: 910px;
     border-radius: 80px;
     position: relative;
@@ -187,45 +197,45 @@ section{
     flex-shrink: 0;
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     gap: 35px;
 }
 
-.form-content{
+.form-content {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-input{
+input {
     background-color: var(--whitepink-color);
     border: none;
     border-radius: 20px;
     padding: 15px 15px 15px 15px;
 }
 
-textarea{
+textarea {
     background-color: var(--whitepink-color);
     border: none;
     border-radius: 20px;
     padding: 15px 15px 15px 15px;
 }
 
-input::placeholder{
+input::placeholder {
     color: var(--darklightpink-color);
     font-size: 15px;
     font-weight: 500;
 }
 
-textarea::placeholder{
+textarea::placeholder {
     color: var(--darklightpink-color);
     font-size: 15px;
     font-weight: 500;
 }
 
-select{
+select {
     background-color: var(--whitepink-color);
     color: var(--darklightpink-color);
     border: none;
@@ -244,25 +254,26 @@ select{
 
 textarea:focus,
 input:focus,
-select:focus{
+select:focus {
     outline: 2px solid var(--darklightpink-color);
-    outline-offset: -5px; /* for the outline to have some padding inside the box*/
+    outline-offset: -5px;
+    /* for the outline to have some padding inside the box*/
 }
 
-form input:hover, 
-form textarea:hover, 
-form select:hover{
+form input:hover,
+form textarea:hover,
+form select:hover {
     background-color: white;
 }
 
 form input,
-form textarea{
+form textarea {
     cursor: text;
 }
 
 /* --- Checkboxes --- */
 
-.form-content--checkbox{
+.form-content--checkbox {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -271,12 +282,12 @@ form textarea{
 }
 
 /* the text went outside the cointainer so this was the solve that Claude suggested*/
-.form-content--checkbox label{
+.form-content--checkbox label {
     flex: 1;
     min-width: 0;
 }
 
- .checkbox{
+.checkbox {
     opacity: 0;
     position: absolute;
     width: 20px;
@@ -297,24 +308,24 @@ form textarea{
     left: 0;
 }
 
-.checkbox:hover + .checkmark{
+.checkbox:hover+.checkmark {
     transform: scale(2);
 }
 
-.checkbox:checked + .checkmark{
+.checkbox:checked+.checkmark {
     background-image: url(../images/square-check-solid-full.svg);
 }
 
-a{
+a {
     color: var(--pink-bkgr);
 }
 
-a:hover{
-    color: var(--offwhite-bkgr);
+a:hover {
+    color: var(--lightpink-color);
 }
 
 /* --- Button --- */
-button{
+button {
     background-color: var(--darklightgreen-color);
     color: var(--whitepink-color);
     font-weight: 800;
@@ -328,13 +339,13 @@ button{
     align-self: center;
 }
 
-button:hover{
+button:hover {
     background-color: darkolivegreen;
     color: white;
 }
 
 /* --- FOOTER --- */
-footer{
+footer {
     background-color: var(--pink-bkgr);
     height: 400px;
     display: flex;
@@ -346,13 +357,13 @@ footer{
     gap: 20px;
 }
 
-.footer-content{
+.footer-content {
     display: flex;
     flex-direction: row;
     gap: 50px;
 }
 
-.nav-socials{
+.nav-socials {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -360,25 +371,25 @@ footer{
     gap: 10px;
 }
 
-footer a{
+footer a {
     color: var(--main-color);
 }
 
-footer a:hover{
-    color: var(--desc-green);
+footer a:hover {
+    color: var(--lightpink-color);
 }
 
-.socials{
+.socials {
     display: flex;
     flex-direction: row;
     font-size: 40px;
 }
 
-footer p{
+footer p {
     color: var(--main-color);
 }
 
-.nav-socials p{
+.nav-socials p {
     color: var(--main-color);
     font-size: 25px;
     line-height: 0;
@@ -386,9 +397,9 @@ footer p{
 
 /* --- SUBSCRIBE FORM --- */
 
-.subscribe-form{
+.subscribe-form {
     color: var(--main-color);
-    background-color: var( --scnd-bkgr-pink);
+    background-color: var(--scnd-bkgr-pink);
     border-radius: 80px;
     width: 750px;
     height: 150px;
@@ -398,31 +409,32 @@ footer p{
     padding-bottom: 10px;
 }
 
-.subscribe-form form{
+.subscribe-form form {
     gap: 15px;
 }
 
-.subscribe-form label{
+.subscribe-form label {
     font-size: 25px;
     display: flex;
     justify-content: center;
-    
+
 }
 
-.input-button{
+.input-button {
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
 
-.subscribe-form input{
+.subscribe-form input {
     width: 400px;
 }
 
-.subscribe-form button{
+.subscribe-form button {
     background-color: var(--main-color);
 }
 
-.subscribe-form button:hover{
-    background-color: darkolivegreen;
+.subscribe-form button:hover {
+    background-color: var(--whitepink-color);
+    color: var(--main-color);
 }
