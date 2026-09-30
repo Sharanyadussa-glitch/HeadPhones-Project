@@ -1,34 +1,191 @@
+header {
+    background-color: var(--mint-bkgr);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: solid lightgray 1px;
+}
 
-.contact-form{
+header button {
+    background-color: var(--main-color);
+}
+
+header button:hover {
+    background-color: var(--lightpink-color);
+    color: var(--main-color);
+}
+
+header a {
+    color: var(--desc-green);
+    text-decoration: none;
+}
+
+header a:hover {
+    color: var(--lightgreen-color);
+
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+h1 {
+    color: var(--main-color);
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    font-size: 18px;
+}
+
+.logo{
+    width: 200px;
+    height: 80%;
+}
+
+.logo:hover{
+    opacity: 0.5;
+}
+
+section {
+    padding: 6em 2em 4em 2em;
+}
+
+/* --- MULTIPLE CONTACT BOXES --- */
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-boxes {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    padding-top: 50px;
+}
+
+.contact {
+    background-color: var(--mint-bkgr);
+}
+
+/* --- HOW CAN WE HELP ---*/
+.help {
+    color: var(--main-color);
+    border: dashed 2px;
+    border-radius: 80px;
+    width: 1100px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    line-height: 5px;
+}
+
+/* --- CONTACT INFO --- */
+.contact-info {
+    color: var(--main-color);
+    border: dashed 2px;
+    border-radius: 80px;
+    width: 500px;
+    height: 600px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    text-align: center;
+}
+
+.contact-info h2,
+.location h2,
+.help h2 {
+    font-size: 45px;
+    line-height: 0px;
+}
+
+.contact-info a {
+    color: var(--main-color);
+    font-size: 20px;
+    line-height: 45px;
+}
+
+/* --- LOCATION BOX ---*/
+
+.location {
+    color: var(--main-color);
+    border: dashed 2px;
+    border-radius: 80px;
+    width: 500px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.location img {
+    width: 370px;
+    height: 222px;
+    border: dashed 2px;
+    border-radius: 80px;
+}
+
+/* --- CONTACT FORM --- */
+
+.image-form {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-form h2 {
+    font-size: 50px;
+    color: var(--main-color);
+}
+
+.contact-form {
     /* --- Background --- */
-    background-color: var(--lightgreen-color); 
+    background-color: var(--lightgreen-color);
     min-height: 100vh;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    padding-right: 60px;
+    flex-direction: column;
 }
 
-.contact-form__bg{
-    /* --- the div or picture frame" --- */
+.contact-form__bg {
+    /* --- the div or "picture frame" --- */
     width: 875px;
     height: 934px;
-    padding-right: 150px;
     flex-shrink: 0;
     overflow: hidden;
+    /*flex shrink makes sure that the item can never shrink smaller than it's set size*/
 }
 
-.contact-form__bg img{
+.contact-form__bg img {
     /* --- Background Image --- */
-    width:875px ;
+    width: 875px;
     height: 934px;
     object-fit: cover;
 }
 
-.form-box{
+.form-box {
     /* --- Container --- */
     background-color: var(--main-color);
-    width: 505px; 
+    width: 505px;
     height: 910px;
     border-radius: 80px;
     position: relative;
@@ -40,45 +197,45 @@
     flex-shrink: 0;
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     gap: 35px;
 }
 
-.form-content{
+.form-content {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-input{
+input {
     background-color: var(--whitepink-color);
     border: none;
     border-radius: 20px;
     padding: 15px 15px 15px 15px;
 }
 
-textarea{
+textarea {
     background-color: var(--whitepink-color);
     border: none;
     border-radius: 20px;
     padding: 15px 15px 15px 15px;
 }
 
-input::placeholder{
+input::placeholder {
     color: var(--darklightpink-color);
     font-size: 15px;
     font-weight: 500;
 }
 
-textarea::placeholder{
+textarea::placeholder {
     color: var(--darklightpink-color);
     font-size: 15px;
     font-weight: 500;
 }
 
-select{
+select {
     background-color: var(--whitepink-color);
     color: var(--darklightpink-color);
     border: none;
@@ -86,7 +243,7 @@ select{
     padding: 20px;
     font-size: 15px;
     font-weight: 500;
-    padding-left: 10px;
+    padding-left: 15px;
 
     appearance: none;
     background-image: url(../images/angle-down-solid-full.svg);
@@ -97,25 +254,26 @@ select{
 
 textarea:focus,
 input:focus,
-select:focus{
+select:focus {
     outline: 2px solid var(--darklightpink-color);
-    outline-offset: -5px; /* for the outline to have some padding inside the boc*/
+    outline-offset: -5px;
+    /* for the outline to have some padding inside the box*/
 }
 
-form input:hover, 
-form textarea:hover, 
-form select:hover{
+form input:hover,
+form textarea:hover,
+form select:hover {
     background-color: white;
 }
 
 form input,
-form textarea{
+form textarea {
     cursor: text;
 }
 
 /* --- Checkboxes --- */
 
-.form-content--checkbox{
+.form-content--checkbox {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -124,12 +282,12 @@ form textarea{
 }
 
 /* the text went outside the cointainer so this was the solve that Claude suggested*/
-.form-content--checkbox label{
+.form-content--checkbox label {
     flex: 1;
     min-width: 0;
 }
 
- .checkbox{
+.checkbox {
     opacity: 0;
     position: absolute;
     width: 20px;
@@ -147,30 +305,29 @@ form textarea{
     background-image: url(../images/square-solid-full.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    pointer-events: none;
     left: 0;
 }
 
-.checkbox:checked + .checkmark{
+.checkbox:hover+.checkmark {
+    transform: scale(2);
+}
+
+.checkbox:checked+.checkmark {
     background-image: url(../images/square-check-solid-full.svg);
 }
 
-a{
-    color: var(--whitepink-color);
+a {
+    color: var(--pink-bkgr);
 }
 
-a:visited{
+a:hover {
     color: var(--lightpink-color);
-}
-
-a:hover{
-    color: var(--lightgreen-color);
 }
 
 /* --- Button --- */
-button{
+button {
     background-color: var(--darklightgreen-color);
-    color: var(--lightpink-color);
+    color: var(--whitepink-color);
     font-weight: 800;
     border: none;
     border-radius: 40px;
@@ -182,7 +339,103 @@ button{
     align-self: center;
 }
 
-button:hover{
+button:hover {
     background-color: darkolivegreen;
     color: white;
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: var(--pink-bkgr);
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    gap: 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.nav-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer a {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--lightpink-color);
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    font-size: 40px;
+}
+
+footer p {
+    color: var(--main-color);
+}
+
+.nav-socials p {
+    color: var(--main-color);
+    font-size: 25px;
+    line-height: 0;
+}
+
+/* --- SUBSCRIBE FORM --- */
+
+.subscribe-form {
+    color: var(--main-color);
+    background-color: var(--scnd-bkgr-pink);
+    border-radius: 80px;
+    width: 750px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.subscribe-form form {
+    gap: 15px;
+}
+
+.subscribe-form label {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.input-button {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.subscribe-form input {
+    width: 400px;
+}
+
+.subscribe-form button {
+    background-color: var(--main-color);
+}
+
+.subscribe-form button:hover {
+    background-color: var(--whitepink-color);
+    color: var(--main-color);
 }
