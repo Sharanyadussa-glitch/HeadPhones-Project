@@ -11,12 +11,6 @@ body {
 a {
   text-decoration: none;
 }
-/* a:visited {
-  color: var(--lightpink-color);
-}
-a:hover {
-  color: var(--lightgreen-color);
-} */
 .btn {
   background-color: var(--main-color);
   color: var(--whitepink-color);
@@ -406,47 +400,14 @@ footer{
 }
 .footer-policy {
   margin-top: 4em;
-}
-
-
-
-
-
-
-/* ------- Footer ------- */
-/* .footer-nav {
-  width: 100vw;
-  height: 400px;
-  color: var(--main-color)!important;
-  background-color: #E4EAD6;
-}
-.footer-navbar {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 100%;
-}
-.footer-navbar-list {
-  list-style: none;
-  text-align: left;
-}
-.footer-logo-link {
-  justify-content: flex-start;
-}
-.footer-logo-link:hover {
-  opacity: 0.5;
-}
-.footer-navbar-link:hover {
-  color: var(--darklightpink-color)!important;
-}
-.footer-navbar-link:visited {
   color: var(--main-color);
+  font-weight: 700;
 }
-.footer-navbar-socials {
-  display: inline-block;
-  text-align: center;
-  margin: 0 2em;
+.policy-link {
+  text-decoration: underline;
+  color: var(--main-color);
+  font-weight: 700;
 }
-.footer-navbar-item {
-  margin: 1.2em 0;
-} */
+.policy-link:hover {
+  color: var(--lightpink-color);
+}
