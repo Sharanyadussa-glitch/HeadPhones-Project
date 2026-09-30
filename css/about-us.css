@@ -1,0 +1,509 @@
+/* Header: logo and main navigation */
+/* 1. Page defaults: remove outer spacing and set the font */
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: var(--mint-bkgr);
+}
+
+/* Paragraph text: black */
+p {
+  color: #000;
+  font-size: 18px;
+}
+
+/* All headings: team green */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #647e60;
+}
+
+/* Standard heading sizes */
+h1 {
+  font-size: 70px;
+}
+
+h2 {
+  font-size: 45px;
+}
+
+/* Main content: introduction, values and team */
+.about-container {
+  color: #647e60;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.1;
+  margin: 0; /* Let the container control the surrounding space */
+  padding: 6em 2em 4em 2em;
+}
+
+.about-container h1 {
+  color: #647e60;
+  font-size: 70px; /* Team's required heading size */
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0;
+}
+
+/* Header: green background and bottom dividing line */
+.header-nav {
+  background-color: var(--mint-bkgr);
+  color: var(--desc-green);
+  font-weight: 700;
+  border-bottom: 1px solid var(--darklightgreen-color);
+  height: 120px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Place the logo, navigation and button side by side */
+.header-navbar {
+  display: flex;
+  align-items: center;
+  min-height: 100%;
+  padding: 0 2em;
+}
+
+/* Smooth logo */
+.header-logo {
+  width: 200px;
+  height: 80%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Make the logo slightly transparent when hovered */
+.header-logo-link:hover {
+  opacity: 0.5;
+}
+
+/* Place the navigation links horizontally */
+.header-navbar-list {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 20px;
+}
+
+/* Keep each navigation item evenly sized */
+.header-navbar-item {
+  width: 150px;
+}
+
+/* Navigation link colour and remove underline */
+.header-navbar-link {
+  color: var(--desc-green);
+  text-decoration: none;
+}
+
+/* Keep visited links the same colour */
+.header-navbar-link:visited {
+  color: var(--desc-green);
+}
+
+/* Change the link colour when hovered */
+.header-navbar-link:hover {
+  color: var(--lightgreen-color);
+}
+
+/* Introduction layout: arrange the two containers side by side */
+.about-intro {
+  width: 90%; /*uses 90% of its parent’s width, leaving breathing room.*/
+  max-width: 960px; /*stops it getting too wide on a large screen.*/
+  margin: 0 auto; /*centres the entire introduction horizontally.*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.about-intro-text h2 {
+  color: #647e60;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1; /*brings the two heading lines close together.*/
+  margin: 0 0 24px;/*removes the top and side margins and leaves 24px below.*/
+}
+
+.about-intro-text p {
+  font-size: 18px;
+  line-height: 1.6; /* Slightly more space between lines */
+}
+
+.about-intro-image img { /* the spac followed by style the image inside the container, rather than the container itself.*/
+  width: 100%;
+  height: auto; /*lets the browser calculate the image’s height to keep its original proportions when its width changes*/
+  display: block;/*makes the image behave as a block element.*/
+  border-radius:80px;
+}
+
+/* Give the text and image containers equal space */
+.about-intro-text,
+.about-intro-image {
+  flex: 1; /*on both divides the available space equally.*/
+  min-width: 0; /*lets them shrink when needed.*/
+}
+
+/* Collection link: pink rounded button */
+/* Space above the Our Collection button */
+.about-intro-text .btn {
+  margin-top: 12px;
+}
+
+/* Our Values: title on the left and value list on the right */
+.about-values {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto; /* Centres the section horizontally */
+  padding: 6em 2em 4em 2em;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Left container only: the green circle */
+.values-title {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%; /*turns it into a circle*/
+  background-color: #789974;
+  flex-shrink: 0; /*prevents it being squeezed by the large images*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.values-title h2 {
+  color: white; /* White heading */
+  font-size: 45px;
+  line-height: 1.1; /*keeps the two lines close together.*/
+  text-align: center;
+  margin: 0;
+}
+
+/* Right container: holds all three value rows */
+.values-list {
+  flex: 1;       /* Fill the space left beside the green circle */
+  min-width: 0;  /* Allow this container to shrink when space is limited */
+}
+
+/* Images inside the values list */
+.values-list img {
+  width: 80px;    /* Make each icon 80px wide */
+  height: auto;  /* Keep the image's original proportions */
+  display: block; /* Remove the small baseline gap beneath the image */
+}
+
+/* Each row: text on the left, icon on the right */
+.value-row {
+  display: flex;                  /* Place text and icon side by side */
+  align-items: center;             /* Align their vertical centres */
+  justify-content: flex-start; /* Keep the text and icon together */
+  gap: 20px;                      /* Keep at least 20px between them */
+  padding: 20px 0;                  /* Space above and below each row */
+  border-bottom: 1px solid #e5e5e5; /* Thin grey dividing line */
+}
+
+/* Prevent icons from being squeezed in a flex row */
+.value-row img {
+  flex-shrink: 0; /* Keep the icon at its specified width */
+}
+
+/* Green value headings */
+.about-values-text h3 {
+  color: #647e60;    /* Muted green */
+  font-size: 24px;   /* Heading size */
+  font-weight: 700;  /* Bold */
+  margin: 0 0 6px;   /* Small space below the heading */
+}
+
+/* Description below each heading */
+.about-values-text p {
+  line-height: 1.5;
+  margin: 0;         /* Remove default paragraph spacing */
+
+}
+
+/* Equal text widths keep the icons aligned */
+.about-values-text {
+  width: 380px;
+}
+
+/* Remove the line below the third value */
+.no-border {
+  border-bottom: none;
+}
+
+/* Centre the whole team section */
+.about-team {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto 60px;    /* No top margin */
+  padding: 2em 2em 4em; /* Smaller top padding */
+  box-sizing: border-box; /* Include padding within the width */
+  text-align: center;
+}
+
+.about-team p {
+  font-size: 18px;
+  margin: 0 0 12px;
+}
+
+/* Green section heading */
+.about-team h2 {
+  font-size: 45px;
+  margin: 0 0 12px;
+}
+
+/* Place the four team cards side by side */
+.team-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px; /* More space between the cards */
+  margin-top: 32px; /* More space above the cards */
+}
+
+
+/* Give all four cards equal space */
+.team-card {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Fit each portrait inside its card */
+.team-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+}
+
+/* Team member name */
+.team-card h3 {
+  margin: 12px 0 4px; /* 12px above, 4px below */
+}
+
+/* Team member role */
+.team-card p {
+  margin: 0; /* Remove the paragraph's default spacing */
+}
+
+/* Shared button appearance */
+.btn {
+  background-color: var(--main-color);
+  color: var(--whitepink-color);
+  font-weight: 800;
+  text-decoration: none; /* Remove underline when an <a> is a button */
+  border: none;
+  border-radius: 40px;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+/* Button hover: light pink background and dark pink text */
+.btn:hover {
+  background-color: var(--lightpink-color);
+  color: var(--main-color);
+}
+
+.btn-gallery {
+  background-color: var(--lightpink-color);
+  color: var(--main-color);
+  margin-top: 0;
+  position: absolute;
+}
+
+.btn-gallery:hover {
+  background-color: var(--darklightpink-color);
+  color: var(--main-color);
+}
+
+/* Secondary light-pink button */
+.btn-secondary {
+  background-color: var(--lightpink-color);
+  color: var(--main-color);
+}
+
+/* Secondary button hover effect */
+.btn-secondary:hover {
+  background-color: var(--darklightpink-color);
+  color: var(--main-color);
+}
+
+/* Keep the Buy now button at its full size */
+.header-cta {
+  flex-shrink: 0;
+}
+
+/* --- Edins FOOTER --- */
+footer{
+  background-color: var(--pink-bkgr);
+  height: 400px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em 0 1em 0;
+}
+.footer-content{
+  display: flex;
+  flex-direction: row;
+}
+.footer-logo {
+  width: 200px;
+  height: 80%;
+  margin: 0;
+  padding: 0;
+}
+.footer-logo-link:hover {
+  opacity: 0.5;
+}
+.nav-socials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 800px;
+}
+.nav-socials-list {
+  display: flex;
+  list-style: none;
+}
+.nav-social-item {
+  margin-right: 30px;
+}
+.nav-social-link {
+  color: var(--main-color);
+}
+.nav-social-link:hover {
+  color: var(--lightpink-color);
+}
+.socials{
+  display: flex;
+  flex-direction: row;
+  font-size: 40px;
+}
+.nav-socials > p {
+  color: var(--main-color);
+}
+
+/* --- SUBSCRIBE FORM --- */
+
+.subscribe-form{
+  color: var(--main-color);
+  background-color: var(--lightpink-color);
+  border-radius: 80px;
+  /*border: solid;
+  border-color: var(--main-color);*/
+  width: 750px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.subscribe-form label{
+  font-size: 25px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.input-button{
+  display: flex;
+  flex-direction: row;
+}
+.subscribe-form input{
+  width: 400px;
+  border-radius: 40px;
+  border: none;
+  padding-left: 20px;
+  margin-right: 20px;
+}
+.subscribe-form button{
+  background-color: var(--main-color);
+}
+.subscribe-form button:hover{
+  background-color: var(--whitepink-color);
+}
+.footer-policy {
+  margin-top: 4em;
+}
+
+/* ------- Footer ------- */
+/* .footer-nav {
+  width: 100vw;
+  height: 400px;
+  color: var(--main-color)!important;
+  background-color: #E4EAD6;
+}
+.footer-navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+.footer-navbar-list {
+  list-style: none;
+  text-align: left;
+}
+.footer-logo-link {
+  justify-content: flex-start;
+}
+.footer-logo-link:hover {
+  opacity: 0.5;
+}
+.footer-navbar-link:hover {
+  color: var(--darklightpink-color)!important;
+}
+.footer-navbar-link:visited {
+  color: var(--main-color);
+}
+.footer-navbar-socials {
+  display: inline-block;
+  text-align: center;
+  margin: 0 2em;
+}
+.footer-navbar-item {
+  margin: 1.2em 0;
+} */
+
+/* Footer links: remove underlines and use the team pink */
+footer a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+/* Privacy Policy: pink text with an underline */
+.footer-policy a {
+  color: var(--main-color);
+  text-decoration: underline;
+  transition: color 0.2s ease; /* Smooth colour change */
+}
+
+/* Turn the link light pink when hovered */
+.footer-policy a:hover {
+  color: var(--lightpink-color);
+}
+
+/* Copyright text below the footer content */
+.footer-policy {
+  margin-top: 4em;
+  color: var(--main-color);
+}
