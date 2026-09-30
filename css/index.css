@@ -15,7 +15,6 @@ body {
 
 header {
   height: 90px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -24,41 +23,56 @@ header {
   z-index: 10;
 }
 
+
 .logo {
-  font-size: 32px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: #c96f85;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  display: flex;
+  align-items: center;
 }
+
+.logo img {
+  width: 180px;
+  height: auto;
+  display: block;
+}
+  
 
 nav {
   display: flex;
   align-items: center;
   gap: 45px;
+  
+
 }
 
-nav a, nav a:visited, nav a:hover {
+nav a, nav a:visited {
   color: #355044;
+  text-decoration: none;
 }
-
+nav a:hover{
+   color: var(--lightgreen-color);
+   opacity: 0.5;
+}
+.nav a:hover {
+  opacity: 0.5;
+}
 
 .buy-btn {
-  background: #c96f85;
-  color: white;
-  padding: 14px 30px;
-  border-radius: 30px;
-  font-size: 16px;
-  font-weight: 600;
+  background-color: var(--main-color);
+  color: var(--whitepink-color);
+  font-weight: 800;
+  border: none;
+  border-radius: 40px;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
 }
 
-
-.button {
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 600;
+.buy-btn:hover{
+  background-color: var(--lightpink-color);
+  color: var(--main-color);
 }
 
 
@@ -112,11 +126,21 @@ h1 span {
 }
 
 .shop-btn {
-  background: #c96f85;
-  color: white;
-  padding: 18px 38px;
-  border-radius: 35px;
-  font-size: 17px;
+ background-color: var(--main-color);
+  color: var(--whitepink-color);
+  font-weight: 800;
+  border: none;
+  border-radius: 40px;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop-btn:hover{
+  background-color: var(--lightpink-color);
+  color: var(--main-color);
 }
 
 .product {
@@ -423,81 +447,52 @@ body {
    NEXT BUTTON
 ========================================= */
 
-.gallery-next {
+/* =========================================
+   GALLERY NEXT BUTTON
+========================================= */
+
+
+.gallery-preview {
     position: relative;
+    padding-bottom: 90px;
+}
 
-    z-index: 3;
-    transition: transform 0.25s ease;
+.gallery-next {
+    position: absolute;
+    bottom: 20px;
 
-    cursor: pointer;
-    width: 100%;
+    /* Move it away from the far right edge */
+    right: 18%;
 
-    max-width: 1350px;
-
-    margin: 30px auto 0;
-
-    display: flex;
-
-    justify-content: flex-end;
+    z-index: 10;
 }
 
 .gallery-next a {
-    padding: 13px 28px;
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    background-color: #BD7482;
+    color: white;
 
     border-radius: 50px;
-  
-
-    background: #BD7482;
-
-    color: white;
 
     text-decoration: none;
 
-    font-size: 14px;
-
+    font-size: 16px;
     font-weight: 700;
+
+    transition: all 0.3s ease;
+}
+
+.gallery-next a:hover {
+   background-color: var(--darklightpink-color);
+   color: var(--main-color);
+    
+    
 }
 
 
-/* =========================================
-   DECORATION
-========================================= */
-
-.gallery-preview::before {
-    content: "";
-
-    position: absolute;
-
-    width: 400px;
-
-    height: 400px;
-
-    top: -230px;
-
-    right: -150px;
-
-    border-radius: 50%;
-
-    background: #E8AEB9;
-}
-
-.gallery-preview::after {
-    content: "";
-
-    position: absolute;
-
-    width: 350px;
-
-    height: 350px;
-
-    bottom: -230px;
-
-    left: -180px;
-
-    border-radius: 50%;
-
-    background: #E2E7D8;
-}
 
 
 /* =========================================
@@ -754,7 +749,7 @@ body {
 
     border-radius: 50px;
 
-    font-size: 15px;
+    font-size: 16px;
 
     font-weight: 700;
 
@@ -768,17 +763,11 @@ body {
 }
 
 .about-button:hover {
-    background: #a95f6e;
-
-    transform: translateY(-2px);
-
-    box-shadow:
-        0 10px 25px rgba(189, 116, 130, 0.25);
+    background-color: var(--darklightpink-color);
+    color: var(--main-color);
 }
 
-.about-button:hover span {
-    transform: translateX(5px);
-}
+
 
 
 /* ================================
@@ -853,7 +842,7 @@ body {
     }
 }
 
-/* --- Edins FOOTER --- */
+* --- Edins FOOTER --- */
 footer{
   background-color: var(--pink-bkgr);
   height: 400px;
@@ -891,23 +880,28 @@ footer{
 .nav-social-item {
   margin-right: 30px;
 }
-.nav-social-link:visited{color: #6f6f6b;
+.nav-social-link {
+  color: var(--main-color);
 }
- 
-
 .nav-social-link:hover {
   color: var(--lightpink-color);
 }
 .socials{
   display: flex;
   flex-direction: row;
-  color: var(--main-color);
   font-size: 40px;
 }
 .nav-socials > p {
   color: var(--main-color);
 }
+.nav-social-link,
+.nav-social-link:visited {
+  color: var(--main-color);
+}
 
+.nav-social-link:hover {
+  color: var(--lightpink-color);
+}
 /* --- SUBSCRIBE FORM --- */
 
 .subscribe-form{
@@ -950,9 +944,5 @@ footer{
 .footer-policy {
   margin-top: 4em;
 }
-
-
-
-
 
 
