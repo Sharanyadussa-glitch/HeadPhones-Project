@@ -164,8 +164,11 @@ h3 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  min-width: 1240px;
   background-color: var(--offwhite-bkgr);
+}
+.gallery-container {
+  width: 70%;
+  justify-items: center;
 }
 .gallery-content {
   width: 800px;
@@ -232,6 +235,10 @@ h3 {
   min-width: 1240px;
   text-align: center;
   background-color: var(--offwhite-bkgr);
+}
+.product-container {
+  width: 70%;
+  justify-items: center;
 }
 .product-content {
   width: 700px;
